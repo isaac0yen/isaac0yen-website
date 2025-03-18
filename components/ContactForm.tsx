@@ -20,7 +20,7 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('mail-api.mygenius.ng/send_mail/bstprogrammer999@gmail.com', {
+      const response = await fetch('https://mail-api.mygenius.ng/send_mail/bstprogrammer999@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
