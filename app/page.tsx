@@ -132,7 +132,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {workExperiences
               .filter(exp => {
-                const selectedCompanies = ["My Genius", "Syllabux", "Mustard.ng"]
+                const selectedCompanies = ["My Genius", "Fuse Varsity", "Bitscard"]
                 return selectedCompanies.includes(exp.companyName)
               })
               .slice(0, 3)
