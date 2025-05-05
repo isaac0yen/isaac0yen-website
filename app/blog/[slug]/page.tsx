@@ -82,12 +82,14 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             </div>
 
             <div className="relative h-64 md:h-96 w-full rounded-lg overflow-hidden mb-8">
-              <Image
-                src={post.coverImage}
-                alt={post.title}
-                fill
-                className="object-cover"
-              />
+              {post.coverImage && (
+                <Image
+                  src={post.coverImage}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                />
+              )}
             </div>
           </header>
 

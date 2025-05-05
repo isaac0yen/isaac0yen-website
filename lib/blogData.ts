@@ -94,7 +94,7 @@ export const blogPosts: BlogPost[] = [
         <p className="text-sm text-gray-500 mt-4">Image source: Unsplash.com</p>
     
 </article>`,
-coverImage: 'https://images.unsplash.com/photo-1527574311754-da5f33012338?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    coverImage: 'https://images.unsplash.com/photo-1527574311754-da5f33012338?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     date: 'Feb 3, 2025',
     readTime: '5 min read',
     tags: ['Time', 'Amnesia', 'Literature', 'Health', 'Love']
@@ -179,59 +179,94 @@ coverImage: 'https://images.unsplash.com/photo-1527574311754-da5f33012338?q=80&w
     id: '3',
     category: 'Technology',
     slug: 'everything-was-perfect-until-it-wasnt',
-    title: 'Everything Was Perfect—Until It Wasn’t',
-    excerpt: 'Everything was perfect, until it wasn’t… Less than 24 hours after our official launch, Meta blocked our bot’s WhatsApp account.',
+    title: 'Everything Was Perfect—Until It Wasn\'t',
+    excerpt: 'Everything was perfect, until it wasn\'t… Less than 24 hours after our official launch, Meta blocked our bot\'s WhatsApp account.',
     content: `
   <article class="prose max-w-3xl mx-auto p-6 space-y-8">
-    <section class="mb-6">
-      <img src="https://res.cloudinary.com/dorypiien/image/upload/v1746479429/IMG-20250505-WA0031_oxjlmo.jpg" alt="Hero Image" class="rounded-lg shadow-md" />
-      <p>Everything was perfect, until it wasn’t… </p>
-      <p>In just three weeks, I built, tested, and launched a WhatsApp bot that processed thousands of messages and arguably outperformed MetaAI on WhatsApp.</p>
+    <section class="mb-8">
+      <img src="https://res.cloudinary.com/dorypiien/image/upload/v1746479429/IMG-20250505-WA0031_oxjlmo.jpg" alt="Hero Image" class="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300" />
+      <p class="text-2xl font-bold mt-6 text-gray-800">Everything was perfect, until it wasn't… </p>
+      <p class="text-lg text-gray-700 leading-relaxed">In just three weeks, I built, tested, and launched a WhatsApp bot that processed thousands of messages and arguably outperformed MetaAI on WhatsApp.</p>
     </section>
   
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold text-gray-800 mb-2">Feature Highlights</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li><strong>Reminders:</strong> "⏰ Hey bot, remind me to study at 7 PM."</li>
-        <li><strong>Search:</strong> "🔍 Real‑time queries via DuckDuckGo Search API."</li>
-        <li><strong>PDF Integration:</strong> "📄 Instant summaries and Q&A for uploaded notes."</li>
-        <li><strong>Voice Notes:</strong> "🎤 Transcription and insights from audio messages."</li>
-        <li><strong>Image Generation:</strong> "🎨 On‑demand AI‑created visuals in chat."</li>
+    <section class="bg-gray-50 rounded-xl p-6 mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">✨ Feature Highlights</h2>
+      <ul class="grid gap-4 text-lg">
+        <li class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow-sm">
+          <span class="text-2xl">⏰</span>
+          <span><strong>Reminders:</strong> "Hey bot, remind me to study at 7 PM."</span>
+        </li>
+        <li class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow-sm">
+          <span class="text-2xl">🔍</span>
+          <span><strong>Search:</strong> Real‑time queries via DuckDuckGo Search API.</span>
+        </li>
+        <li class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow-sm">
+          <span class="text-2xl">📄</span>
+          <span><strong>PDF Integration:</strong> Instant summaries and Q&A for uploaded notes.</span>
+        </li>
+        <li class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow-sm">
+          <span class="text-2xl">🎤</span>
+          <span><strong>Voice Notes:</strong> Transcription and insights from audio messages.</span>
+        </li>
+        <li class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow-sm">
+          <span class="text-2xl">🎨</span>
+          <span><strong>Image Generation:</strong> On‑demand AI‑created visuals in chat.</span>
+        </li>
       </ul>
     </section>  
-    <section class="mb-6">
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">🔄 System Flow Overview</h2>
+      <img src="https://asset.cloudinary.com/dorypiien/66e2522bf9f3dc2a32ce6fcab6b69891" alt="Bot Flowchart" class="w-full rounded-xl shadow-lg mb-4" />
+      <p class="text-lg text-gray-700 leading-relaxed">The architecture efficiently routes messages using WhatsApp Web.js. If the message is text, it detects the user's intent and processes accordingly. If it's an image, it extracts content first, then follows the same intent detection and processing path. PDFs are summarized, saved, and queried intelligently. The process is entirely modular and object-oriented.</p>
+    </section>
+  
+    <section class="bg-red-50 rounded-xl p-6 mb-8">
+      <h2 class="text-2xl font-bold text-red-800 mb-4">⚠️ The Unexpected Block</h2>
+      <p class="text-lg text-red-700 leading-relaxed">Less than 24 hours after our official launch, Meta blocked our WhatsApp number—likely because they realized we were giving MetaAI a run for its money 😉. It was a tough setback, but the build process taught me more than any tutorial ever could.</p>
+    </section>  
+
+    <section class="bg-blue-50 rounded-xl p-6 mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">🛠️ Tech Stack & Deployment</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <h3 class="font-bold mb-2">WhatsApp Integration</h3>
+          <p>WhatsApp Web.js</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <h3 class="font-bold mb-2">AI Engines</h3>
+          <p>Google Gemini, Groq AI, and more</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <h3 class="font-bold mb-2">Architecture</h3>
+          <p>Node.js & MongoDB written in OOP style ("everything was a class!")</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <h3 class="font-bold mb-2">Hosting</h3>
+          <p>Render—moved off Docker/Azure due to heavy Puppeteer dependencies</p>
+        </div>
+      </div>
+    </section>
+
+        <section class="mb-6">
       <h2 class="text-xl font-semibold text-gray-800 mb-2">System Flow Overview</h2>
-      <img src="https://asset.cloudinary.com/dorypiien/66e2522bf9f3dc2a32ce6fcab6b69891" alt="Bot Flowchart" class="rounded-lg shadow-md" />
+      <img src="https://res.cloudinary.com/dorypiien/image/upload/v1746480483/WhatsApp_Web.js_Message_Flowchart_jjdpqn.png" alt="Bot Flowchart" class="rounded-lg shadow-md" />
       <p>The architecture efficiently routes messages using WhatsApp Web.js. If the message is text, it detects the user's intent and processes accordingly. If it’s an image, it extracts content first, then follows the same intent detection and processing path. PDFs are summarized, saved, and queried intelligently. The process is entirely modular and object-oriented.</p>
     </section>
   
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold text-gray-800 mb-2">The Unexpected Block</h2>
-      <p>Less than 24 hours after our official launch, Meta blocked our WhatsApp number—likely because they realized we were giving MetaAI a run for its money 😉. It was a tough setback, but the build process taught me more than any tutorial ever could.</p>
-    </section>  
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold text-gray-800 mb-2">Tech Stack & Deployment</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li><strong>WhatsApp Integration:</strong> WhatsApp Web.js</li>
-        <li><strong>AI Engines:</strong> Google Gemini, Groq AI, and more</li>
-        <li><strong>Architecture:</strong> Node.js & MongoDB written in OOP style (“everything was a class!”)</li>
-        <li><strong>Hosting:</strong> Render—moved off Docker/Azure due to heavy Puppeteer dependencies</li>
-      </ul>
+  
+    <section class="bg-gray-50 rounded-xl p-6 mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">🙏 Acknowledgments</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">Special thanks to Gabriel Ojumah, a fellow KCOB for leading our marketing efforts—see him on <a href="https://ng.linkedin.com/in/gabriel-ojumah-96905a283" class="text-blue-600 hover:text-blue-800 underline transition-colors duration-300">LinkedIn</a>.</p>
     </section>
   
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold text-gray-800 mb-2">Acknowledgments</h2>
-      <p>Special thanks to Gabriel Ojumah, a fellow KCOB for leading our marketing efforts—see him on <a href="https://ng.linkedin.com/in/gabriel-ojumah-96905a283" class="text-blue-600 underline">LinkedIn</a>.</p>
-    </section>
-  
-    <p class="text-sm text-gray-500">Image sources: Provided by author</p>
+    <p class="text-sm text-gray-500 italic text-center">Image sources: Provided by author</p>
   </article>`,
     coverImage: 'https://res.cloudinary.com/dorypiien/image/upload/v1746479429/IMG-20250505-WA0031_oxjlmo.jpg',
     date: 'May 5, 2025',
     readTime: '4 min read',
     tags: ['WhatsApp Bot', 'AI', 'Node.js', 'Render', 'OOP']
   }
-    
 ];
 
 // Function to get all blog posts
