@@ -7,6 +7,13 @@ const workExperiences = [
     link: 'https://mygenius.ng',
   },
   {
+    companyName: 'Fuse Varsity',
+    role: 'Chief Technology Officer (CTO)',
+    imageSrc: '/assets/fuse.jpeg',
+    period: 'April 2025 - Till date',
+    link: 'https://selar.com/m/Fusevarsity',
+  },
+  {
     companyName: 'Bitscard',
     role: 'Software Engineer (Frontend)',
     imageSrc: '/assets/bitscard.png',
@@ -26,7 +33,7 @@ const workExperiences = [
     imageSrc: '/assets/Syllabux.png',
     period: 'Aug 2023 - Feb 2024',
     link: 'https://mysyllabux.com',
-  },
+  }
 ];
 
 export default workExperiences;

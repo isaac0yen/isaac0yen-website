@@ -95,7 +95,7 @@ export const blogPosts: BlogPost[] = [
     
 </article>`,
 coverImage: 'https://images.unsplash.com/photo-1527574311754-da5f33012338?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    date: 'Jan 5, 2025',
+    date: 'Feb 3, 2025',
     readTime: '5 min read',
     tags: ['Time', 'Amnesia', 'Literature', 'Health', 'Love']
   },
@@ -171,7 +171,7 @@ coverImage: 'https://images.unsplash.com/photo-1527574311754-da5f33012338?q=80&w
     
         </article>`,
     coverImage: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*PU2IrCNSq1HO1Xdh8EebFw.jpeg',
-    date: 'Feb 3, 2025',
+    date: 'Jan 5, 2025',
     readTime: '7 min read',
     tags: ['Love', 'Motherhood', 'Cancer', 'Depression', 'Storytelling']
   },
