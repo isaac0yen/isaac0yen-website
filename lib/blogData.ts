@@ -217,7 +217,7 @@ export const blogPosts: BlogPost[] = [
 
     <section class="mb-8">
       <h2 class="text-2xl font-bold text-gray-800 mb-4">🔄 System Flow Overview</h2>
-      <img src="https://asset.cloudinary.com/dorypiien/66e2522bf9f3dc2a32ce6fcab6b69891" alt="Bot Flowchart" class="w-full rounded-xl shadow-lg mb-4" />
+      <img src="https://res.cloudinary.com/dorypiien/image/upload/v1746480483/WhatsApp_Web.js_Message_Flowchart_jjdpqn.png" alt="Bot Flowchart" class="w-full rounded-xl shadow-lg mb-4" />
       <p class="text-lg text-gray-700 leading-relaxed">The architecture efficiently routes messages using WhatsApp Web.js. If the message is text, it detects the user's intent and processes accordingly. If it's an image, it extracts content first, then follows the same intent detection and processing path. PDFs are summarized, saved, and queried intelligently. The process is entirely modular and object-oriented.</p>
     </section>
   
