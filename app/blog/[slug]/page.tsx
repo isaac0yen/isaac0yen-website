@@ -82,7 +82,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             </div>
 
             <div className="relative h-64 md:h-96 w-full rounded-lg overflow-hidden mb-8">
-              {post.coverImage && (
+              {post.coverImage !== "https://asset.cloudinary.com/dorypiien/66e2522bf9f3dc2a32ce6fcab6b69891" && (
                 <Image
                   src={post.coverImage}
                   alt={post.title}

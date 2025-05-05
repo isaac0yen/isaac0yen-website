@@ -7,7 +7,7 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   content: string;
-  coverImage?: string;
+  coverImage: string;
   date: string;
   readTime: string;
   tags: string[];
@@ -264,6 +264,7 @@ export const blogPosts: BlogPost[] = [
   </article>`,
     date: 'May 5, 2025',
     readTime: '4 min read',
+    coverImage: "https://asset.cloudinary.com/dorypiien/66e2522bf9f3dc2a32ce6fcab6b69891",
     tags: ['WhatsApp Bot', 'AI', 'Node.js', 'Render', 'OOP']
   }
 ];
