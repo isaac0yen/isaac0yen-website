@@ -191,7 +191,7 @@ export default function Home() {
                 slug={post.slug}
                 title={post.title}
                 excerpt={post.excerpt}
-                coverImage={post.coverImage}
+                coverImage={post.coverImage || ''}
                 date={post.date}
                 readTime={post.readTime}
                 category={post.category}
