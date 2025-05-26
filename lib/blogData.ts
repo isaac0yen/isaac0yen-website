@@ -191,7 +191,7 @@ export const blogPosts: BlogPost[] = [
       <div class="grid gap-5 text-lg">
         <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
           <h3 class="font-bold mb-2 flex items-center gap-2"><span class="text-2xl">⏰</span>Smart Reminders</h3>
-          <p class="text-gray-700">Context-aware scheduling system handling 300+ daily reminders with natural language processing</p>
+          <p class="text-gray-700">Context-aware scheduling system handling.</p>
         </div>
         <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
           <h3 class="font-bold mb-2 flex items-center gap-2"><span class="text-2xl">🔍</span>Real-Time Research</h3>
