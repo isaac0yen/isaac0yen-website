@@ -231,7 +231,7 @@ export const blogPosts: BlogPost[] = [
           <li>Our service got the digital equivalent of a timeout</li>
           <li>We spent 23 hours in Meta's naughty corner before they let us play again</li>
         </ul>
-        <p>Plot twist: We bounced back like a rubber duck in a hurricane! Now we're 5,000+ messages stronger and our users are swimming in $1,850 worth of referral money. Not bad for a bot that got grounded, right? 🦆💰</p>
+        <p>Plot twist: We bounced back like a rubber duck in a hurricane! Now we're 5,000+ messages stronger Not bad for a bot that got grounded, right? 🦆💰</p>
       </div>
     </section>
 
