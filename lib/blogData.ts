@@ -15,6 +15,81 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '4',
+    category: 'Technology',
+    slug: 'the-rise-of-studyhub',
+    title: 'The Rise of StudyHub',
+    excerpt: 'From a political campaign tool to a university-wide study resource platform - here\'s how StudyHub evolved to serve over 1,000+ students.',
+    content: `<article class="prose max-w-3xl mx-auto p-6 space-y-8">
+      <section class="mb-12 text-center">
+        <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440213/study-hub-icon_nwnceb.png" 
+             alt="StudyHub Logo" 
+             class="w-32 h-32 mx-auto rounded-xl shadow-lg" />
+        <p class="text-gray-700 mt-6">What started as a political campaign tool transformed into an essential academic resource platform for university students.</p>
+      </section>
+
+      <section class="bg-blue-50 rounded-xl p-8 mb-12">
+        <h2 class="text-3xl font-semibold text-gray-900 mb-4">The Genesis</h2>
+        <div class="space-y-4 text-gray-700">
+          <p>"Heyyy, Please do you have [COURSE_CODE] PDF?" - A familiar plea echoing through university WhatsApp groups during exam season. Despite being a self-proclaimed not-so-serious student 😅, I recognized a crucial gap: the need for a unified platform for academic resources.</p>
+          
+          <p>It was surprising that in the past decade, no one had tackled this seemingly minor yet persistent issue. That's what birthed StudyHub.</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440492/WhatsApp_Image_2025-07-13_at_10.00.47_PM_m4dcvx.jpg" 
+             alt="StudyHub Interface" 
+             class="w-full rounded-xl shadow-lg mb-4" />
+        <p class="text-sm text-gray-500 text-center">The evolved StudyHub interface</p>
+      </section>
+
+      <section class="bg-gray-50 rounded-xl p-8 mb-12">
+        <h2 class="text-3xl font-semibold text-gray-900 mb-4">🚀 From Politics to PDFs</h2>
+        <div class="space-y-4 text-gray-700">
+          <p>Fun fact: StudyHub wasn't originally meant to be an academic platform. It started as a political campaign tool! I built it with a unique tech stack - Node.js backend paired with a PHP frontend (yes, I know, I'm usually the first to question such combinations 😄).</p>
+          
+          <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440484/WhatsApp_Image_2025-07-13_at_10.00.46_PM_gbzfhp.jpg" 
+               alt="Original Campaign Version" 
+               class="w-full rounded-xl shadow-lg my-6" />
+          
+          <p>After the elections, the project sat dormant... until exam season hit! 📚</p>
+        </div>
+      </section>
+
+      <section class="bg-green-50 rounded-xl p-8 mb-12">
+        <h2 class="text-3xl font-semibold text-gray-900 mb-4">📈 The Breakthrough</h2>
+        <div class="space-y-4 text-gray-700">
+          <p>Similar to my other project "My Genius" (stay tuned for that story!), exam season created the perfect storm. We integrated NotebookLM audio summaries as a resource and rebranded the entire platform.</p>
+          
+          <div class="bg-white p-6 rounded-xl shadow-sm my-6">
+            <h3 class="font-bold text-xl mb-4">🎯 Key Achievements</h3>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>1,000+ downloaded resources</li>
+              <li>Audio summaries became top downloaded content</li>
+              <li>Successful monetization through strategic ad placement</li>
+            </ul>
+          </div>
+
+          <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440501/WhatsApp_Image_2025-07-13_at_10.00.47_PM_1_v3h0jv.jpg" 
+               alt="StudyHub Stats" 
+               class="w-full rounded-xl shadow-lg" />
+        </div>
+      </section>
+
+      <section class="bg-purple-50 rounded-xl p-8 mb-12">
+        <h2 class="text-3xl font-semibold text-gray-900 mb-4">🙏 Acknowledgments</h2>
+        <p class="text-gray-700">Special thanks to <a href="https://www.linkedin.com/in/gabriel-ojumah-b03116299/" class="text-blue-600 hover:text-blue-800 underline">Gabriel Ojumah</a> for the marketing insights, and shoutout to Gbadamosi Fredrick (Newton) and Adesina David for their brilliant work on strategy and publicity.</p>
+      </section>
+
+      <div class="text-sm text-gray-500 text-center border-t pt-6">Currently expanding to serve more universities | Working on squashing those minor bugs 🐛</div>
+    </article>`,
+    coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1752440213/study-hub-icon_nwnceb.png',
+    date: 'July 13, 2025',
+    readTime: '4 min read',
+    tags: ['EdTech', 'University', 'Node.js', 'PHP', 'Academic']
+  },
+  {
     id: '1',
     category: 'Write Ups',
     slug: 'beyond-times-reach',

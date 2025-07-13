@@ -1,0 +1,36 @@
+Hero Image: https://res.cloudinary.com/duuu5uos5/image/upload/v1752440213/study-hub-icon_nwnceb.png Square
+
+"Heyyy, Please do you have [COURSE_CODE] PDF?"
+This is the reality of University students on or shortly before examination period...
+Not like I'm particularly a serious student(lauching emoji) but then, it's crucial that we have a unified platform for these things.
+And it's quite funny that in the past 10 years no one has decided to take out time to solve this minor issue people have...
+Eitherway, that's what Birthed StudyHub.
+
+Preview image, https://res.cloudinary.com/duuu5uos5/image/upload/v1752440492/WhatsApp_Image_2025-07-13_at_10.00.47_PM_m4dcvx.jpg 720 × 844 
+
+
+
+Fun Fact, this was supposed to be a political stunt for a friend, hence it's first version was rushed.
+
+[image of the first UI]
+caption(I branded the software for that cause, and after the election... it was just, there)
+
+Node.js Backend, but PHP front end, and it's funny because I make fun of people who use a serverside language, particularly Next.js and then build a separate backend, but here we have it... I DID IT.
+
+Moving on, I build and launched... had a couple of downloads and then just pushed aside.
+But then EXAM CAMEEEEE!
+And aside from the fact that I have the desease of wanting to build things during exams, this I even managed to supress it because it's me that knows what I'm fighting for bayi.(Laughing emoji)
+
+https://res.cloudinary.com/duuu5uos5/image/upload/v1752440484/WhatsApp_Image_2025-07-13_at_10.00.46_PM_gbzfhp.jpg 720 × 812
+
+
+Similar story to My Genius(By the way I'd be making a post about it soon...) we had exams and people needed NOTESSS.
+Another thing that Helps me is NotebookLM audio summary so I just packed it there as part of the resources there and rebranded the entire software, optimized the code a bit and pushed out to UNILORIN students... As usualll...*shouts great nigerian students!!! the software got massive interactions, over 1000+ in downloaded resources with the audio summary being the top downloaded...(Learnt a thing or 2 about marketing from Gabriel[https://www.linkedin.com/in/gabriel-ojumah-b03116299/])
+
+After I saw the massive portntial, I added ads to display after a download(I need MONEYYYYYY!(CRYING EMOJI)) and I'm working on adding capabilities for other schools... still has minot bugs but on it.
+
+https://res.cloudinary.com/duuu5uos5/image/upload/v1752440501/WhatsApp_Image_2025-07-13_at_10.00.47_PM_1_v3h0jv.jpg 572 × 1280
+
+
+Saving the best for the last, shout out to Gbadamosi Fredrick (Newton) and Adesina David, brains behind strategy and publicity.
+
