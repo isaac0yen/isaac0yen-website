@@ -15,81 +15,6 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: '4',
-    category: 'Technology',
-    slug: 'the-rise-of-studyhub',
-    title: 'The Rise of StudyHub',
-    excerpt: 'From a political campaign tool to a university-wide study resource platform - here\'s how StudyHub evolved to serve over 1,000+ students.',
-    content: `<article class="prose max-w-3xl mx-auto p-6 space-y-8">
-      <section class="mb-12 text-center">
-        <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440213/study-hub-icon_nwnceb.png" 
-             alt="StudyHub Logo" 
-             class="w-32 h-32 mx-auto rounded-xl shadow-lg" />
-        <p class="text-gray-700 mt-6">What started as a political campaign tool transformed into an essential academic resource platform for university students.</p>
-      </section>
-
-      <section class="bg-blue-50 rounded-xl p-8 mb-12">
-        <h2 class="text-3xl font-semibold text-gray-900 mb-4">The Genesis</h2>
-        <div class="space-y-4 text-gray-700">
-          <p>"Heyyy, Please do you have [COURSE_CODE] PDF?" - A familiar plea echoing through university WhatsApp groups during exam season. Despite being a self-proclaimed not-so-serious student 😅, I recognized a crucial gap: the need for a unified platform for academic resources.</p>
-          
-          <p>It was surprising that in the past decade, no one had tackled this seemingly minor yet persistent issue. That's what birthed StudyHub.</p>
-        </div>
-      </section>
-
-      <section class="mb-12">
-        <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440492/WhatsApp_Image_2025-07-13_at_10.00.47_PM_m4dcvx.jpg" 
-             alt="StudyHub Interface" 
-             class="w-full rounded-xl shadow-lg mb-4" />
-        <p class="text-sm text-gray-500 text-center">The evolved StudyHub interface</p>
-      </section>
-
-      <section class="bg-gray-50 rounded-xl p-8 mb-12">
-        <h2 class="text-3xl font-semibold text-gray-900 mb-4">🚀 From Politics to PDFs</h2>
-        <div class="space-y-4 text-gray-700">
-          <p>Fun fact: StudyHub wasn't originally meant to be an academic platform. It started as a political campaign tool! I built it with a unique tech stack - Node.js backend paired with a PHP frontend (yes, I know, I'm usually the first to question such combinations 😄).</p>
-          
-          <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440484/WhatsApp_Image_2025-07-13_at_10.00.46_PM_gbzfhp.jpg" 
-               alt="Original Campaign Version" 
-               class="w-full rounded-xl shadow-lg my-6" />
-          
-          <p>After the elections, the project sat dormant... until exam season hit! 📚</p>
-        </div>
-      </section>
-
-      <section class="bg-green-50 rounded-xl p-8 mb-12">
-        <h2 class="text-3xl font-semibold text-gray-900 mb-4">📈 The Breakthrough</h2>
-        <div class="space-y-4 text-gray-700">
-          <p>Similar to my other project "My Genius" (stay tuned for that story!), exam season created the perfect storm. We integrated NotebookLM audio summaries as a resource and rebranded the entire platform.</p>
-          
-          <div class="bg-white p-6 rounded-xl shadow-sm my-6">
-            <h3 class="font-bold text-xl mb-4">🎯 Key Achievements</h3>
-            <ul class="list-disc pl-6 space-y-2">
-              <li>1,000+ downloaded resources</li>
-              <li>Audio summaries became top downloaded content</li>
-              <li>Successful monetization through strategic ad placement</li>
-            </ul>
-          </div>
-
-          <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440501/WhatsApp_Image_2025-07-13_at_10.00.47_PM_1_v3h0jv.jpg" 
-               alt="StudyHub Stats" 
-               class="w-full rounded-xl shadow-lg" />
-        </div>
-      </section>
-
-      <section class="bg-purple-50 rounded-xl p-8 mb-12">
-        <h2 class="text-3xl font-semibold text-gray-900 mb-4">🙏 Acknowledgments</h2>
-        <p class="text-gray-700">Special thanks to <a href="https://www.linkedin.com/in/gabriel-ojumah-b03116299/" class="text-blue-600 hover:text-blue-800 underline">Gabriel Ojumah</a> for the marketing insights, and shoutout to Gbadamosi Fredrick (Newton) and Adesina David for their brilliant work on strategy and publicity.</p>
-      </section>
-
-      <div class="text-sm text-gray-500 text-center border-t pt-6">Currently expanding to serve more universities | Working on squashing those minor bugs 🐛</div>
-    </article>`,
-    coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1752440213/study-hub-icon_nwnceb.png',
-    date: 'July 13, 2025',
-    readTime: '4 min read',
-    tags: ['EdTech', 'University', 'Node.js', 'PHP', 'Academic']
-  },
-  {
     id: '1',
     category: 'Write Ups',
     slug: 'beyond-times-reach',
@@ -251,132 +176,530 @@ export const blogPosts: BlogPost[] = [
     tags: ['Love', 'Motherhood', 'Cancer', 'Depression', 'Storytelling']
   },
   {
-    id: '3',
-    category: 'Technology',
-    slug: 'everything-was-perfect-until-it-wasnt',
-    title: 'Everything Was Perfect — Until It Wasn\'t',
-    excerpt: '3 Weeks. 5,000 Messages. 1 Major Setback.',
-    content: `<article class="prose max-w-3xl mx-auto p-6 space-y-8">
-    <section class="mb-12 text-center">
-      <img src="https://res.cloudinary.com/dorypiien/image/upload/v1746479429/IMG-20250505-WA0031_oxjlmo.jpg" alt="System Architecture" class="w-full max-w-md mx-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300" />
-      <p class="text-gray-700 mt-6">What began as an experimental project evolved into a robust messaging platform that seamlessly integrated AI capabilities within WhatsApp's ecosystem - until we faced our ultimate stress test.</p>    </section>
-
-    <section class="bg-gray-50 rounded-xl p-8 mb-10">
-      <h2 class="text-3xl font-semibold text-gray-900 mb-6">🚀 Core Capabilities</h2>
-      <div class="grid gap-5 text-lg">
-        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-          <h3 class="font-bold mb-2 flex items-center gap-2"><span class="text-2xl">⏰</span>Smart Reminders</h3>
-          <p class="text-gray-700">Context-aware scheduling system handling.</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-          <h3 class="font-bold mb-2 flex items-center gap-2"><span class="text-2xl">🔍</span>Real-Time Research</h3>
-          <p class="text-gray-700">Multi-source verification system combining DuckDuckGo API with AI synthesis</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-          <h3 class="font-bold mb-2 flex items-center gap-2"><span class="text-2xl">📄</span>Document Intelligence</h3>
-          <p class="text-gray-700">PDF analysis engine achieving 92% accuracy in academic paper summarization</p>
-        </div>
-        <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-          <h3 class="font-bold mb-2 flex items-center gap-2"><span class="text-2xl">🎨</span>Creative Studio</h3>
-          <p class="text-gray-700">On-demand image generation supporting 15+ artistic styles and commercial use cases</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-3xl font-semibold text-gray-900 mb-6">⚙️ Architectural Breakdown</h2>
-      <img src="https://res.cloudinary.com/dorypiien/image/upload/v1748261264/deepseek_mermaid_20250526_ccff5e_gr7t4v.png" alt="System Workflow" class="w-full max-w-3xl mx-auto rounded-xl shadow-lg mb-6" />
-      <div class="text-sm text-gray-500 text-center mb-4">System workflow diagram (Built with Mermaid.js)</div>
-      <div class="space-y-4 text-gray-700">
-        <p>Our object-oriented architecture features three core modules:</p>
-        <ul class="list-disc pl-6 space-y-2">
-          <li><strong>Intent Classifier:</strong> NLP prompt analyzing message history and user patterns</li>
-          <li><strong>Tool Orchestrator:</strong> Dynamic workflow builder with 5-step execution limit</li>
-          <li><strong>Safety Layer:</strong> Real-time content filtering and PII redaction system</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="bg-red-50 rounded-xl p-8 mb-12">
-      <h2 class="text-3xl font-semibold text-red-800 mb-4">🎢 The Great WhatsApp Rollercoaster of 2025</h2>
-      <div class="space-y-4 text-red-700">
-        <p>Picture this: We're cruising along, feeling like tech wizards, when Meta's algorithms decided to play "Spot the AI" with us. Spoiler alert: They won! In just 90 minutes:</p>
-        <ul class="list-disc pl-6 space-y-2">
-          <li>Meta's AI detectors went "Wait a minute... this bot's too smart!" 🤓</li>
-          <li>Our service got the digital equivalent of a timeout</li>
-          <li>We spent 23 hours in Meta's naughty corner before they let us play again</li>
-        </ul>
-        <p>Plot twist: We bounced back like a rubber duck in a hurricane! Now we're 5,000+ messages stronger Not bad for a bot that got grounded, right? 🦆💰</p>
-      </div>
-    </section>
-
-    <section class="bg-blue-50 rounded-xl p-8 mb-12">
-      <h2 class="text-3xl font-semibold text-gray-900 mb-6">🖥️ Technical Stack</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="font-bold text-lg mb-3">Communication</h3>
-          <ul class="space-y-2">
-            <li>WhatsApp Web.js</li>
-            <li>Session management</li>
-            <li>Failover system</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="font-bold text-lg mb-3">AI</h3>
-          <ul class="space-y-2">
-            <li>Gemini Pro</li>
-            <li>Groq</li>
-            <li>Custom models</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="font-bold text-lg mb-3">Stack</h3>
-          <ul class="space-y-2">
-            <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>Render</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
-          <h3 class="font-bold text-lg mb-3">Security</h3>
-          <ul class="space-y-2">
-            <li>Encryption</li>
-            <li>Compliance</li>
-            <li>GDPR</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="bg-green-50 rounded-xl p-8 mb-12">
-      <h2 class="text-3xl font-semibold text-gray-900 mb-4">📈 Current Status</h2>
-      <div class="grid grid-cols-2 gap-4 text-center">
-        <div class="bg-white p-4 rounded-xl shadow-sm">
-          <div class="text-2xl font-bold text-blue-600">5,200+</div>
-          <div class="text-gray-700">Messages Processed</div>
-        </div>
-        <div class="bg-white p-4 rounded-xl shadow-sm">
-          <div class="text-2xl font-bold text-green-600">₦100,000+</div>
-          <div class="text-gray-700">Referral Revenue</div>
-          <div class="text-sm text-gray-500">(40% to affiliates, 60% to AI & maintenance)</div>
+    "id": "3",
+    "category": "Technology",
+    "slug": "everything-was-perfect-until-it-wasnt",
+    "title": "Everything Was Perfect — Until It Wasn't",
+    "excerpt": "3 Weeks. 5,000 Messages. 1 Major Setback.",
+    "content": `<article class="max-w-4xl mx-auto bg-white">
+      <!-- Hero Section -->
+      <header class="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="relative z-10 px-8 py-16 text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Everything Was Perfect — Until It Wasn't</h1>
+          <p class="text-xl md:text-2xl font-light mb-8 opacity-90">3 Weeks. 5,000 Messages. 1 Major Setback.</p>
+          <div class="flex justify-center items-center space-x-6 text-sm">
+            <span class="bg-black bg-opacity-20 px-3 py-1 rounded-full">May 5, 2025</span>
+            <span class="bg-black bg-opacity-20 px-3 py-1 rounded-full">4 min read</span>
           </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <div class="px-8 py-12">
+        <!-- Introduction -->
+        <section class="mb-16">
+          <div class="flex justify-center mb-8">
+            <img src="https://res.cloudinary.com/dorypiien/image/upload/v1746479429/IMG-20250505-WA0031_oxjlmo.jpg" 
+                 alt="AI-Powered WhatsApp Bot Architecture" 
+                 class="w-full max-w-2xl rounded-2xl shadow-2xl border border-gray-200" />
+          </div>
+          <div class="max-w-3xl mx-auto text-center">
+            <p class="text-lg text-gray-700 leading-relaxed">What began as an experimental project evolved into a robust messaging platform that seamlessly integrated AI capabilities within WhatsApp's ecosystem — until we faced our ultimate stress test.</p>
+          </div>
+        </section>
+
+        <!-- Executive Summary -->
+        <section class="mb-16 bg-gray-50 rounded-2xl p-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Executive Summary</h2>
+          <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-blue-600 mb-2">5,200+</div>
+              <div class="text-gray-600">Messages Processed</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-green-600">₦100,000+</div>
+              <div class="text-gray-600">Revenue Generated</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Core Capabilities -->
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Core Platform Capabilities</h2>
+          <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-2xl">⏰</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900">Smart Reminders</h3>
+              </div>
+              <p class="text-gray-700">Context-aware scheduling system with natural language processing for intelligent task management and automated follow-ups.</p>
+            </div>
+            
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-2xl">🔍</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900">Real-Time Research</h3>
+              </div>
+              <p class="text-gray-700">Multi-source verification system combining DuckDuckGo API with AI synthesis for accurate, up-to-date information delivery.</p>
+            </div>
+            
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-2xl">📄</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900">Document Intelligence</h3>
+              </div>
+              <p class="text-gray-700">Advanced PDF analysis engine achieving 92% accuracy in academic paper summarization and technical document processing.</p>
+            </div>
+            
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-2xl">🎨</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900">Creative Studio</h3>
+              </div>
+              <p class="text-gray-700">On-demand image generation supporting 15+ artistic styles with commercial licensing for business applications.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Architecture -->
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">System Architecture</h2>
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-lg">
+            <div class="p-8">
+              <img src="https://res.cloudinary.com/dorypiien/image/upload/v1748261264/deepseek_mermaid_20250526_ccff5e_gr7t4v.png" 
+                   alt="System Architecture Diagram" 
+                   class="w-full max-w-4xl mx-auto rounded-xl border border-gray-200" />
+              <p class="text-sm text-gray-500 text-center mt-4">System workflow diagram built with Mermaid.js</p>
+            </div>
+            
+            <div class="bg-gray-50 p-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Core Components</h3>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                  <div>
+                    <strong class="text-gray-900">Intent Classifier:</strong>
+                    <span class="text-gray-700"> Advanced NLP system analyzing message history and user behavioral patterns for accurate intent prediction</span>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                  <div>
+                    <strong class="text-gray-900">Tool Orchestrator:</strong>
+                    <span class="text-gray-700"> Dynamic workflow builder with intelligent 5-step execution limit and fallback mechanisms</span>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-red-500 rounded-full mt-2"></div>
+                  <div>
+                    <strong class="text-gray-900">Safety Layer:</strong>
+                    <span class="text-gray-700"> Real-time content filtering with PII redaction and compliance monitoring</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- The Incident -->
+        <section class="mb-16">
+          <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl border-l-4 border-red-400 p-8">
+            <h2 class="text-3xl font-bold text-red-800 mb-6">The Meta Detection Incident</h2>
+            <div class="space-y-6 text-gray-800">
+              <p class="text-lg leading-relaxed">After three weeks of flawless operation, we encountered our most significant challenge. Meta's sophisticated AI detection algorithms identified patterns in our bot's responses that triggered their automated moderation systems.</p>
+              
+              <div class="bg-white rounded-xl p-6 border border-red-200">
+                <h3 class="font-semibold text-lg mb-4 text-red-700">Timeline of Events</h3>
+                <div class="space-y-3">
+                  <div class="flex items-center space-x-3">
+                    <span class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center text-sm font-semibold text-red-600">1</span>
+                    <span class="text-gray-700">Initial detection by Meta's AI monitoring systems</span>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <span class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center text-sm font-semibold text-red-600">2</span>
+                    <span class="text-gray-700">Service suspension within 90 minutes of detection</span>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <span class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center text-sm font-semibold text-green-600">3</span>
+                    <span class="text-gray-700">23-hour review period and successful reinstatement</span>
+                  </div>
+                </div>
+              </div>
+              
+              <p class="text-lg">The experience provided valuable insights into platform compliance and led to enhanced detection evasion strategies. Post-incident, we've successfully processed 5,000+ additional messages with zero downtime.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Stack -->
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Technology Infrastructure</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white border border-gray-200 rounded-xl p-6 text-center">
+              <h3 class="font-semibold text-lg mb-4 text-blue-600">Communication Layer</h3>
+              <ul class="space-y-2 text-gray-700 text-sm">
+                <li>WhatsApp Web.js</li>
+                <li>Session Management</li>
+                <li>Failover Systems</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white border border-gray-200 rounded-xl p-6 text-center">
+              <h3 class="font-semibold text-lg mb-4 text-green-600">AI Integration</h3>
+              <ul class="space-y-2 text-gray-700 text-sm">
+                <li>Gemini Pro</li>
+                <li>Groq Infrastructure</li>
+                <li>Custom ML Models</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white border border-gray-200 rounded-xl p-6 text-center">
+              <h3 class="font-semibold text-lg mb-4 text-purple-600">Backend Stack</h3>
+              <ul class="space-y-2 text-gray-700 text-sm">
+                <li>Node.js Runtime</li>
+                <li>MongoDB Database</li>
+                <li>Render Hosting</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white border border-gray-200 rounded-xl p-6 text-center">
+              <h3 class="font-semibold text-lg mb-4 text-red-600">Security & Compliance</h3>
+              <ul class="space-y-2 text-gray-700 text-sm">
+                <li>End-to-End Encryption</li>
+                <li>GDPR Compliance</li>
+                <li>Data Protection</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Financial Performance -->
+        <section class="mb-16">
+          <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Business Performance</h2>
+            <div class="max-w-2xl mx-auto">
+              <div class="bg-white rounded-xl p-6 mb-6">
+                <div class="text-center">
+                  <div class="text-4xl font-bold text-green-600 mb-2">₦100,000+</div>
+                  <div class="text-gray-600 mb-4">Total Revenue Generated</div>
+                  <div class="text-sm text-gray-500 bg-gray-50 rounded-lg p-3">
+                    Revenue Distribution: 40% affiliate commissions, 60% AI infrastructure & maintenance
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
 
-    <section class="bg-purple-50 rounded-xl p-8 mb-12">
-      <h2 class="text-3xl font-semibold text-gray-900 mb-4">📧 Questions?</h2>
-      <p class="text-lg text-gray-700">For more questions or inquiries, please email <a href="mailto:isaacoyeniyi06@gmail.com" class="text-blue-600 hover:text-blue-800 underline">isaacoyeniyi06@gmail.com</a></p>
-    </section>
-    <section class="bg-gray-50 rounded-xl p-8 mb-12">
-      <h2 class="text-3xl font-semibold text-gray-900 mb-4">🙏 Acknowledgments</h2>
-      <p class="text-lg text-gray-700">This project would not exist without the exceptional contributions of <a href="https://ng.linkedin.com/in/gabriel-ojumah-96905a283" class="text-blue-600 hover:text-blue-800 underline">Gabriel Ojumah</a>, whose growth hacking strategies drove 60% of our user acquisition, and our early adopters who provided 1,200+ feedback points to refine the system.</p>
-    </section>
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-white px-8 py-12">
+        <div class="max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Questions & Inquiries</h3>
+              <p class="text-gray-300 mb-4">For technical discussions or collaboration opportunities:</p>
+              <a href="mailto:isaacoyeniyi06@gmail.com" class="text-blue-400 hover:text-blue-300 transition-colors">isaacoyeniyi06@gmail.com</a>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Acknowledgments</h3>
+              <p class="text-gray-300 text-sm">Special recognition to <a href="https://ng.linkedin.com/in/gabriel-ojumah-96905a283" class="text-blue-400 hover:text-blue-300">Gabriel Ojumah</a> for growth hacking strategies that drove 60% of user acquisition, and our early adopters who provided 1,200+ feedback points.</p>
+            </div>
+          </div>
+          
+          <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
+            System metrics updated: May 26, 2025 | All architectural diagrams created by development team
+          </div>
+        </div>
+      </footer>
+    </article>`,
+    "date": "May 5, 2025",
+    "readTime": "4 min read",
+    "coverImage": "https://res.cloudinary.com/dorypiien/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_white,b_rgb:262c35/v1748261264/deepseek_mermaid_20250526_ccff5e_gr7t4v.png",
+    "tags": ["WhatsApp Bot", "AI", "Node.js", "Render", "OOP"]
+  },
+  {
+    "id": "4",
+    "category": "Technology",
+    "slug": "the-rise-of-studyhub",
+    "title": "The Rise of StudyHub",
+    "excerpt": "From a political campaign tool to a university-wide study resource platform - here's how StudyHub evolved to serve over 1,000+ students.",
+    "content": `<article class="max-w-4xl mx-auto bg-white">
+      <!-- Hero Section -->
+      <header class="relative bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="relative z-10 px-8 py-16 text-center">
+          <div class="mb-6">
+            <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440213/study-hub-icon_nwnceb.png" 
+                 alt="StudyHub Logo" 
+                 class="w-24 h-24 mx-auto rounded-2xl shadow-xl border-4 border-white border-opacity-20" />
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">The Rise of StudyHub</h1>
+          <p class="text-xl md:text-2xl font-light mb-8 opacity-90">From Political Campaign Tool to University-Wide Academic Platform</p>
+          <div class="flex justify-center items-center space-x-6 text-sm">
+            <span class="bg-black bg-opacity-20 px-3 py-1 rounded-full">July 13, 2025</span>
+            <span class="bg-black bg-opacity-20 px-3 py-1 rounded-full">4 min read</span>
+          </div>
+        </div>
+      </header>
 
-    <div class="text-sm text-gray-500 text-center border-t pt-6">System metrics updated: May 26, 2025 | All architectural diagrams created by development team</div>
-</article>`,
-    date: 'May 5, 2025',
-    readTime: '4 min read',
-    coverImage: "https://res.cloudinary.com/dorypiien/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_white,b_rgb:262c35/v1748261264/deepseek_mermaid_20250526_ccff5e_gr7t4v.png",
-    tags: ['WhatsApp Bot', 'AI', 'Node.js', 'Render', 'OOP']
+      <!-- Main Content -->
+      <div class="px-8 py-12">
+        <!-- Problem Statement -->
+        <section class="mb-16">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">The Universal Student Problem</h2>
+            <div class="bg-blue-50 rounded-2xl p-8 border-l-4 border-blue-400">
+              <p class="text-lg text-gray-800 italic leading-relaxed">"Heyyy, Please do you have [COURSE_CODE] PDF?"</p>
+              <p class="text-gray-700 mt-4">A familiar plea echoing through university WhatsApp groups during every exam season. Despite being a self-proclaimed not-so-serious student 😅, I recognized a crucial gap in the academic ecosystem.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- The Genesis Story -->
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">The Unexpected Origin Story</h2>
+          <div class="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-8">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">From Politics to PDFs</h3>
+                <p class="text-gray-700 mb-4">StudyHub began as a platform to aid a political capaign, built with an unconventional tech stack: Node.js backend paired with PHP frontend, now causing an effect on people's academics</p>
+              </div>
+            </div>
+            <div>
+              <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440484/WhatsApp_Image_2025-07-13_at_10.00.46_PM_gbzfhp.jpg" 
+                   alt="Original Campaign Platform Interface" 
+                   class="w-full rounded-2xl shadow-xl border border-gray-200" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Platform Evolution -->
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Platform Transformation</h2>
+          <div class="space-y-8">
+            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-lg">
+              <img src="https://res.cloudinary.com/duuu5uos5/image/upload/v1752440492/WhatsApp_Image_2025-07-13_at_10.00.47_PM_m4dcvx.jpg" 
+                   alt="Modern StudyHub Interface" 
+                   class="w-full object-cover" />
+              <div class="p-8">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">The Modern Academic Hub</h3>
+                <p class="text-gray-700">The transformed platform now serves as a comprehensive academic resource center, featuring intuitive navigation, efficient search capabilities, and seamless resource sharing.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Key Features & Innovation -->
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Innovation Highlights</h2>
+          <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-6">🎯 Platform Achievements</h3>
+                <div class="space-y-4">
+                  <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="text-2xl font-bold text-blue-600 mb-1">1.5k+</div>
+                    <div class="text-gray-600 text-sm">Resources Downloaded</div>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="text-2xl font-bold text-green-600 mb-1">#1</div>
+                    <div class="text-gray-600 text-sm">Audio Summaries (Top Content)</div>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="text-2xl font-bold text-purple-600 mb-1">100%</div>
+                    <div class="text-gray-600 text-sm">Monetization Success</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-6">🚀 Key Innovations</h3>
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-3">
+                    <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
+                      <span class="text-sm">🎧</span>
+                    </div>
+                    <div>
+                      <div class="font-semibold text-gray-900">NotebookLM Integration</div>
+                      <div class="text-gray-600 text-sm">AI-powered audio summaries became the platform's most popular feature</div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-3">
+                    <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                      <span class="text-sm">📱</span>
+                    </div>
+                    <div>
+                      <div class="font-semibold text-gray-900">Mobile-First Design</div>
+                      <div class="text-gray-600 text-sm">Optimized for university students' primary device usage patterns</div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-3">
+                    <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+                      <span class="text-sm">💰</span>
+                    </div>
+                    <div>
+                      <div class="font-semibold text-gray-900">Strategic Monetization</div>
+                      <div class="text-gray-600 text-sm">Sustainable revenue model through targeted advertising placement</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Architecture -->
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Technical Foundation</h2>
+          <div class="bg-white border border-gray-200 rounded-2xl p-8">
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+              <div class="bg-blue-50 rounded-xl p-6">
+                <h3 class="font-semibold text-lg text-blue-800 mb-3">Backend Infrastructure</h3>
+                <div class="text-gray-700 space-y-2 text-sm">
+                  <div>Node.js Runtime</div>
+                  <div>Express.js Framework</div>
+                  <div>RESTful API Design</div>
+                </div>
+              </div>
+              
+              <div class="bg-green-50 rounded-xl p-6">
+                <h3 class="font-semibold text-lg text-green-800 mb-3">Frontend Layer</h3>
+                <div class="text-gray-700 space-y-2 text-sm">
+                  <div>PHP Integration</div>
+                  <div>Responsive Design</div>
+                  <div>Progressive Enhancement</div>
+                </div>
+              </div>
+              
+              <div class="bg-purple-50 rounded-xl p-6">
+                <h3 class="font-semibold text-lg text-purple-800 mb-3">AI Integration</h3>
+                <div class="text-gray-700 space-y-2 text-sm">
+                  <div>NotebookLM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Impact Metrics -->
+        <section class="mb-16">
+          <div class="bg-gradient-to-r from-blue-900 to-purple-900 text-white rounded-2xl p-8">
+            <h2 class="text-3xl font-bold mb-8 text-center">Platform Impact</h2>
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+              <div class="bg-white bg-opacity-10 rounded-xl p-6">
+                <div class="text-3xl font-bold mb-2 text-black">1,000+</div>
+                <div class="text-blue-200">Active Students</div>
+              </div>
+              <div class="bg-white bg-opacity-10 rounded-xl p-6">
+                <div class="text-3xl font-bold mb-2 text-black">15+</div>
+                <div class="text-blue-200">Course Categories</div>
+              </div>
+              <div class="bg-white bg-opacity-10 rounded-xl p-6">
+                <div class="text-3xl font-bold mb-2 text-black">95%</div>
+                <div class="text-blue-200">User Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Future Roadmap -->
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Looking Forward</h2>
+          <div class="bg-gray-50 rounded-2xl p-8">
+            <div class="max-w-3xl mx-auto space-y-6">
+              <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold text-sm">1</div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Multi-University Expansion</h3>
+                  <p class="text-gray-700">Scaling the platform to serve additional universities across Nigeria and West Africa</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-semibold text-sm">2</div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Enhanced AI Features</h3>
+                  <p class="text-gray-700">Advanced content analysis, personalized study recommendations, and intelligent resource matching</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-semibold text-sm">3</div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Platform Optimization</h3>
+                  <p class="text-gray-700">Ongoing bug fixes, performance improvements, and user experience enhancements</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-white px-8 py-12">
+        <div class="max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Project Contributors</h3>
+              <p class="text-gray-300 text-sm mb-4">This project's success is attributed to exceptional teamwork and strategic insights.</p>
+              <div class="space-y-2 text-sm">
+                <p class="text-gray-300">
+                  <strong class="text-white">Marketing Strategy:</strong> 
+                  <a href="https://www.linkedin.com/in/gabriel-ojumah-b03116299/" class="text-blue-400 hover:text-blue-300 ml-1">Gabriel Ojumah</a>
+                </p>
+                <p class="text-gray-300">
+                  <strong class="text-white">Growth & Strategy:</strong> 
+                  <span class="ml-1">Gbadamosi Fredrick (Newton)</span>
+                </p>
+                <p class="text-gray-300">
+                  <strong class="text-white">Publicity & Outreach:</strong> 
+                  <span class="ml-1">Adesina David</span>
+                </p>
+              </div>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Platform Status</h3>
+              <div class="space-y-3">
+                <div class="flex items-center space-x-3">
+                  <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">Active Development</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">Multi-University Expansion</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                  <span class="text-gray-300 text-sm">Bug Fixes in Progress</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
+            StudyHub Platform | Transforming Academic Resource Sharing | Currently serving 1,000+ students
+          </div>
+        </div>
+      </footer>
+    </article>`,
+    "coverImage": "https://res.cloudinary.com/duuu5uos5/image/upload/v1752440213/study-hub-icon_nwnceb.png",
+    "date": "July 13, 2025",
+    "readTime": "4 min read",
+    "tags": ["EdTech", "University", "Node.js", "PHP", "Academic"]
   }
 ];
 

@@ -77,10 +77,10 @@ export default function Home() {
             <div className="hidden md:flex w-full md:w-1/2 justify-center px-4 md:px-0">
               <div className="relative w-full h-64 md:h-80 max-w-md rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/assets/me2.jpeg"
+                  src="/assets/latest-me.jpeg"
                   alt="Oyeniyi Isaac"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />
@@ -137,32 +137,32 @@ export default function Home() {
               })
               .slice(0, 3)
               .map((experience, index) => (
-              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                <div className="relative h-48 w-full">
-                  <Image
-                    src={experience.imageSrc}
-                    alt={experience.companyName}
-                    layout="fill"
-                    objectFit="contain"
-                    className="group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 text-gray-800">{experience.companyName}</h3>
-                  <p className="text-gray-600 mb-4">
-                    {experience.role} • {experience.period}
-                  </p>
-                  <Link
-                    href={experience.link}
-                    className="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center group"
-                  >
-                    Visit Website
-                    <svg className="w-4 h-4 ml-1 transition transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </Link>
+                <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                  <div className="relative h-48 w-full">
+                    <Image
+                      src={experience.imageSrc}
+                      alt={experience.companyName}
+                      layout="fill"
+                      objectFit="contain"
+                      className="group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>                <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2 text-gray-800">{experience.companyName}</h3>
+                    <p className="text-gray-600 mb-4">
+                      {experience.role} • {experience.period}
+                    </p>
+                    <Link
+                      href={experience.link}
+                      className="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center group"
+                    >
+                      Visit Website
+                      <svg className="w-4 h-4 ml-1 transition transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>          <div className="text-center mt-10">
             <Link
               href="/work"
@@ -185,7 +185,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {getAllBlogPosts().slice(0, 3).reverse().map((post) => (
+            {getAllBlogPosts().reverse().slice(0, 3).map((post) => (
               <BlogCard
                 key={post.id}
                 slug={post.slug}
