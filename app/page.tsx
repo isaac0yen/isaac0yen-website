@@ -41,10 +41,10 @@ export default function Home() {
             <div className="md:w-1/2 flex justify-center">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl">
                 <Image
-                  src="/assets/me.jpeg"
+                  src="/assets/me-2.jpeg"
                   alt="Oyeniyi Isaac"
                   fill
-                  className="object-cover"
+                  className="object-cover object-bottom"
                 />
               </div>
             </div>
@@ -77,10 +77,10 @@ export default function Home() {
             <div className="hidden md:flex w-full md:w-1/2 justify-center px-4 md:px-0">
               <div className="relative w-full h-64 md:h-80 max-w-md rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/assets/latest-me.jpeg"
+                  src="/assets/__.jpeg"
                   alt="Oyeniyi Isaac"
                   fill
-                  className="object-cover"
+                  className="object-cover object-bottom"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />

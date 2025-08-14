@@ -50,10 +50,10 @@ export default function About() {
                     <div className="w-full h-full bg-white rounded-full p-2">
                       <div className="relative w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
                         <Image
-                          src="/assets/me4.png"
+                          src="/assets/___.jpeg"
                           alt="Isaac Oyeniyi - Full-Stack Developer"
                           fill
-                          className="object-cover object-top group-hover:scale-110 transition-transform duration-700"
+                          className="object-cover object-bottom group-hover:scale-110 transition-transform duration-700"
                           priority
                         />
                       </div>
