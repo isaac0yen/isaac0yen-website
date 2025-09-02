@@ -764,7 +764,6 @@ export const blogPosts: BlogPost[] = [
         </div>
     </section>
     
-    <p class="text-sm text-gray-500 mt-4">Image source: Cloudinary</p>
 </article>`,
     coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/w_800,h_600,c_fill,f_auto,q_auto/v1756814474/Gemini_Generated_Image_o86cpco86cpco86c_fwg7ai.png',
     date: 'Feb 9, 2025',
