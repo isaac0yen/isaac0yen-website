@@ -766,7 +766,7 @@ export const blogPosts: BlogPost[] = [
     
 </article>`,
     coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/w_800,h_600,c_fill,f_auto,q_auto/v1756814474/Gemini_Generated_Image_o86cpco86cpco86c_fwg7ai.png',
-    date: 'Feb 9, 2025',
+    date: 'Sep 2, 2025',
     readTime: '3 min read',
     tags: ['Life', 'Motivation', 'Challenges', 'Growth', 'Mindset']
   }
