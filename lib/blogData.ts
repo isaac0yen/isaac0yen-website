@@ -700,6 +700,76 @@ export const blogPosts: BlogPost[] = [
     "date": "July 13, 2025",
     "readTime": "4 min read",
     "tags": ["EdTech", "University", "Node.js", "PHP", "Academic"]
+  },
+  {
+    id: '5',
+    category: 'Write Ups',
+    slug: 'problems-or-challenges',
+    title: 'Problems or Challenges?',
+    excerpt: 'What do we define as problems and are they really a bad thing? The message here is to embrace what you call "problems" to be "challenges" and move on to the next category so you can solve bigger issues!',
+    content: `
+<article class="prose max-w-3xl mx-auto p-6 space-y-8">
+    <section class="mb-12">
+        <div class="text-gray-700 leading-relaxed space-y-6">
+            <p class="text-lg font-medium text-gray-800">What do we define as problems and are they really a bad thing?</p>
+            
+            <div class="bg-gray-50 rounded-lg p-6 space-y-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Case Studies</h3>
+                
+                <div class="space-y-4">
+                    <div class="border-l-4 border-blue-400 pl-4">
+                        <p><strong>Case study 1:</strong> We have a young adult who is looking for a skill to learn and get a source of income.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-green-400 pl-4">
+                        <p><strong>Case study 2:</strong> We have a young adult who just finished learning a skill or just graduated looking for ways to get a job.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-yellow-400 pl-4">
+                        <p><strong>Case study 3:</strong> We have a company founder who's looking for investment.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-purple-400 pl-4">
+                        <p><strong>Case study 4:</strong> We have a billionaire who's trying to create a brand new industrial sector.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p>And the funny thing is, everyone who's at a particular point doesn't think of the fact that even after passing this phase, we have... probably a significantly more life choking category of problems ahead. 😂️</p>
+            
+            <div class="bg-red-50 border border-red-200 rounded-lg p-4 text-center">
+                <p class="text-lg font-semibold text-red-700">Is there any motivation here? NO! 😂️</p>
+            </div>
+            
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+                <p class="text-lg font-medium text-blue-800 mb-4">The Real Message</p>
+                <p class="text-blue-700">The message here is to embrace what you call "problems" to be "challenges" and move on to the next category so you can solve bigger issues!</p>
+            </div>
+            
+            <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">The Journey Continues</h3>
+                <div class="space-y-2 text-gray-700">
+                    <p>✅ Finish school...</p>
+                    <p>✅ Learn that skill...</p>
+                    <p>✅ Find that job...</p>
+                    <p>✅ Start that company...</p>
+                    <p>✅ Find a way to scale...</p>
+                    <p>✅ And cause an impact however you want to.</p>
+                </div>
+            </div>
+            
+            <div class="text-center bg-gray-100 rounded-lg p-4">
+                <p class="text-lg font-medium text-gray-600">Or just give up! 😂️</p>
+            </div>
+        </div>
+    </section>
+    
+    <p class="text-sm text-gray-500 mt-4">Image source: Cloudinary</p>
+</article>`,
+    coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/w_800,h_600,c_fill,f_auto,q_auto/v1756814474/Gemini_Generated_Image_o86cpco86cpco86c_fwg7ai.png',
+    date: 'Feb 9, 2025',
+    readTime: '3 min read',
+    tags: ['Life', 'Motivation', 'Challenges', 'Growth', 'Mindset']
   }
 ];
 

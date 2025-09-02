@@ -1,36 +1,50 @@
-Hero Image: https://res.cloudinary.com/duuu5uos5/image/upload/v1752440213/study-hub-icon_nwnceb.png Square
-
-"Heyyy, Please do you have [COURSE_CODE] PDF?"
-This is the reality of University students on or shortly before examination period...
-Not like I'm particularly a serious student(lauching emoji) but then, it's crucial that we have a unified platform for these things.
-And it's quite funny that in the past 10 years no one has decided to take out time to solve this minor issue people have...
-Eitherway, that's what Birthed StudyHub.
-
-Preview image, https://res.cloudinary.com/duuu5uos5/image/upload/v1752440492/WhatsApp_Image_2025-07-13_at_10.00.47_PM_m4dcvx.jpg 720 × 844 
+What do we define as problems and are they really a bad thing?
 
 
 
-Fun Fact, this was supposed to be a political stunt for a friend, hence it's first version was rushed.
-
-[image of the first UI]
-caption(I branded the software for that cause, and after the election... it was just, there)
-
-Node.js Backend, but PHP front end, and it's funny because I make fun of people who use a serverside language, particularly Next.js and then build a separate backend, but here we have it... I DID IT.
-
-Moving on, I build and launched... had a couple of downloads and then just pushed aside.
-But then EXAM CAMEEEEE!
-And aside from the fact that I have the desease of wanting to build things during exams, this I even managed to supress it because it's me that knows what I'm fighting for bayi.(Laughing emoji)
-
-https://res.cloudinary.com/duuu5uos5/image/upload/v1752440484/WhatsApp_Image_2025-07-13_at_10.00.46_PM_gbzfhp.jpg 720 × 812
+Case study 1: We have a young adult who is looking for a skill to learn and get a source of income.
 
 
-Similar story to My Genius(By the way I'd be making a post about it soon...) we had exams and people needed NOTESSS.
-Another thing that Helps me is NotebookLM audio summary so I just packed it there as part of the resources there and rebranded the entire software, optimized the code a bit and pushed out to UNILORIN students... As usualll...*shouts great nigerian students!!! the software got massive interactions, over 1000+ in downloaded resources with the audio summary being the top downloaded...(Learnt a thing or 2 about marketing from Gabriel[https://www.linkedin.com/in/gabriel-ojumah-b03116299/])
 
-After I saw the massive portntial, I added ads to display after a download(I need MONEYYYYYY!(CRYING EMOJI)) and I'm working on adding capabilities for other schools... still has minot bugs but on it.
-
-https://res.cloudinary.com/duuu5uos5/image/upload/v1752440501/WhatsApp_Image_2025-07-13_at_10.00.47_PM_1_v3h0jv.jpg 572 × 1280
+Case study 2: We have a young adult who just finished learning a skill or just graduated looking for ways to get a job.
 
 
-Saving the best for the last, shout out to Gbadamosi Fredrick (Newton) and Adesina David, brains behind strategy and publicity.
 
+Case study 3: We have a company founder who's looking for investment.
+
+
+
+Case study 4: We have a billionaire who's trying to create a brand new industrial sector.
+
+
+
+And the funny thing is, everyone who's at a particular point doesn't think of the fact that even after passing this phase, we have... probably a significantly more life choking category of problems ahead. 😂️
+
+
+
+Is there any motivation here? NO! 😂️
+
+
+
+The message here is to embrace what you call "problems" to be "challenges" and move on to the next category so you can solve bigger issues!
+
+
+
+Finish school...
+
+Learn that skill...
+
+Find that job...
+
+Start that company...
+
+Find a way to scale...
+
+And cause an impact however you want to.
+
+
+
+Or just give up! 😂️
+
+
+https://res.cloudinary.com/duuu5uos5/image/upload/v1756814474/Gemini_Generated_Image_o86cpco86cpco86c_fwg7ai.png
