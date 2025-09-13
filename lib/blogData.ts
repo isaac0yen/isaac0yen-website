@@ -774,7 +774,7 @@ export const blogPosts: BlogPost[] = [
 
 // Function to get all blog posts
 export function getAllBlogPosts() {
-  return blogPosts;
+  return blogPosts.reverse();
 }
 
 // Function to get blog post by slug
