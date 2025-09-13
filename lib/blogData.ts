@@ -14,6 +14,83 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+
+  {
+    id: '2',
+    category: 'Write Ups',
+    slug: 'the-story-of-a-telephone',
+    title: 'The story of a Telephone',
+    excerpt: '“No, it’ll break her,” he replied. “I’d never want to be the reason why she’s sad.”',
+    content: `<article class="prose max-w-none text-gray-700 leading-relaxed space-y-4">
+        <p>In the midst of dust and old piles of appliances, I lie and wait for my final demise. All the hopes and dreams of my evergreen use—building a family and being with them till the very end—fade away.</p>
+
+        <p>You see, Jack, my owner, was gifted me by his parents—a red shiny telephone. He had just moved into his own apartment, and everyone was happy. I was installed before the housewarming, and I saw how beautiful love could be: relationships and family spirit. Nothing felt happier.</p>
+
+        <p>In the midst of all these emotions existed a bond far greater than everyone else's—a bond meant to last a lifetime. With this bond, challenges could be fought, and a lifetime of happiness could be created—or so it seemed.</p>
+
+        <p>At the beginning of their relationship, Jack and Jane lived separately but frequently communicated with letters and gift deliveries. Their favorite method, however, was through me. Hours of calls seemed like minutes to them, and their conversations were nothing but flowery—a bond meant to last a lifetime, so we thought.</p>
+
+        <p>One day, Jack received a mail. I remember so vividly how his face slowly became numb after reading the letter. Little did I know, that would be the last time I'd see him normal.</p>
+
+        <p>He reached for me, called his mom, and broke the news.</p>
+
+        <div class="my-6">
+            <p class="italic">"Tell Jane," she said.</p>
+            <p class="italic">"No, it'll break her," he replied. "I'd never want to be the reason why she's sad."</p>
+        </div>
+
+        <p>He placed me back, hanging up the phone, dressed up, and left. I couldn't help but wonder what could be going on in his mind.</p>
+
+        <div class="my-6">
+            <p class="italic">What's he gonna do? Run away?</p>
+            <p class="italic">No, he can't. He's way too smart to do that.</p>
+            <p class="italic">He must have gone to Jane's place, right?</p>
+            <p class="italic">He, of all people, knows the importance of communication, right?</p>
+            <p class="italic">...Right?</p>
+        </div>
+
+        <p>He came back that evening. I couldn't tell if he was drunk or just high on his problems.</p>
+
+        <p>"There's no way I'm gonna die early, right?" That was exactly my thought. It's just leukemia, right? Wait, what's leukemia?</p>
+
+        <div class="my-6">
+            <p>"I'm gonna have to go away," I heard from his room.</p>
+            <p class="italic">What?? There's no way you're going away! What's gonna happen to Jane? What's gonna happen the day she finds out? What's gonna happen when every day I ring and she starts getting worried? What's gonna happen if she comes over, sees you're nowhere to be found, tells your mom, and we all panic...</p>
+        </div>
+
+        <p>I've never wished to be audible so much in my life so much. God, if you could, now would be a nice time. Please, this guy's gonna make a mistake.</p>
+
+        <div class="my-6">
+            <p>"I can't let the pity come from different directions," he said. "The day Jane finds out, she's gonna break... and make sure she comes here till the day I die."</p>
+            <p class="italic">And I'm like, "Die?"</p>
+        </div>
+
+        <p>He looks around, wondering who made that sound.</p>
+        <p class="italic">Did he hear me?</p>
+
+        <p>"Yes," he continued. "I've been ignorant for too long, and at the brink of time... being diagnosed wrongly for too long. I don't have much time left, and why cause them the stress? Why cause them the pain? I've seen what cancer does to people and families."</p>
+
+        <p class="italic">And I'm like, "Ooh cancer, that's leukemia."</p>
+
+        <p>"This is the best thing I have to do..." Then he leaves…</p>
+
+        <p>Six months later after his eventual demise, everyone's coming to pack his things. The house that once gathered to celebrate a life's beginning has been reduced to memories and sighs.</p>
+
+        <p class="italic">Sighhh.</p>
+
+        <p class="italic">If only he knew...</p>
+
+        <p>That love is called love for a reason, and it's most effective in the dark times. Even when you're lonely, wanting to bear the brunt of your actions, inactions, and the circumstances life throws at you—that's when love prevails.</p>
+
+        <p>Now, I'm useless, probably going to be given out. But if I could say something to him now that he's gone... Open up to people who care. Communicate when things are tough. You don't have to take it all on your own.</p>
+        <p className="text-sm text-gray-500 mt-4">Image source: Unsplash.com</p>
+    
+        </article>`,
+    coverImage: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*PU2IrCNSq1HO1Xdh8EebFw.jpeg',
+    date: 'Jan 5, 2025',
+    readTime: '7 min read',
+    tags: ['Love', 'Motherhood', 'Cancer', 'Depression', 'Storytelling']
+  },
   {
     id: '1',
     category: 'Write Ups',
@@ -98,82 +175,6 @@ export const blogPosts: BlogPost[] = [
     date: 'Feb 3, 2025',
     readTime: '5 min read',
     tags: ['Time', 'Amnesia', 'Literature', 'Health', 'Love']
-  },
-  {
-    id: '2',
-    category: 'Write Ups',
-    slug: 'the-story-of-a-telephone',
-    title: 'The story of a Telephone',
-    excerpt: '“No, it’ll break her,” he replied. “I’d never want to be the reason why she’s sad.”',
-    content: `<article class="prose max-w-none text-gray-700 leading-relaxed space-y-4">
-        <p>In the midst of dust and old piles of appliances, I lie and wait for my final demise. All the hopes and dreams of my evergreen use—building a family and being with them till the very end—fade away.</p>
-
-        <p>You see, Jack, my owner, was gifted me by his parents—a red shiny telephone. He had just moved into his own apartment, and everyone was happy. I was installed before the housewarming, and I saw how beautiful love could be: relationships and family spirit. Nothing felt happier.</p>
-
-        <p>In the midst of all these emotions existed a bond far greater than everyone else's—a bond meant to last a lifetime. With this bond, challenges could be fought, and a lifetime of happiness could be created—or so it seemed.</p>
-
-        <p>At the beginning of their relationship, Jack and Jane lived separately but frequently communicated with letters and gift deliveries. Their favorite method, however, was through me. Hours of calls seemed like minutes to them, and their conversations were nothing but flowery—a bond meant to last a lifetime, so we thought.</p>
-
-        <p>One day, Jack received a mail. I remember so vividly how his face slowly became numb after reading the letter. Little did I know, that would be the last time I'd see him normal.</p>
-
-        <p>He reached for me, called his mom, and broke the news.</p>
-
-        <div class="my-6">
-            <p class="italic">"Tell Jane," she said.</p>
-            <p class="italic">"No, it'll break her," he replied. "I'd never want to be the reason why she's sad."</p>
-        </div>
-
-        <p>He placed me back, hanging up the phone, dressed up, and left. I couldn't help but wonder what could be going on in his mind.</p>
-
-        <div class="my-6">
-            <p class="italic">What's he gonna do? Run away?</p>
-            <p class="italic">No, he can't. He's way too smart to do that.</p>
-            <p class="italic">He must have gone to Jane's place, right?</p>
-            <p class="italic">He, of all people, knows the importance of communication, right?</p>
-            <p class="italic">...Right?</p>
-        </div>
-
-        <p>He came back that evening. I couldn't tell if he was drunk or just high on his problems.</p>
-
-        <p>"There's no way I'm gonna die early, right?" That was exactly my thought. It's just leukemia, right? Wait, what's leukemia?</p>
-
-        <div class="my-6">
-            <p>"I'm gonna have to go away," I heard from his room.</p>
-            <p class="italic">What?? There's no way you're going away! What's gonna happen to Jane? What's gonna happen the day she finds out? What's gonna happen when every day I ring and she starts getting worried? What's gonna happen if she comes over, sees you're nowhere to be found, tells your mom, and we all panic...</p>
-        </div>
-
-        <p>I've never wished to be audible so much in my life so much. God, if you could, now would be a nice time. Please, this guy's gonna make a mistake.</p>
-
-        <div class="my-6">
-            <p>"I can't let the pity come from different directions," he said. "The day Jane finds out, she's gonna break... and make sure she comes here till the day I die."</p>
-            <p class="italic">And I'm like, "Die?"</p>
-        </div>
-
-        <p>He looks around, wondering who made that sound.</p>
-        <p class="italic">Did he hear me?</p>
-
-        <p>"Yes," he continued. "I've been ignorant for too long, and at the brink of time... being diagnosed wrongly for too long. I don't have much time left, and why cause them the stress? Why cause them the pain? I've seen what cancer does to people and families."</p>
-
-        <p class="italic">And I'm like, "Ooh cancer, that's leukemia."</p>
-
-        <p>"This is the best thing I have to do..." Then he leaves…</p>
-
-        <p>Six months later after his eventual demise, everyone's coming to pack his things. The house that once gathered to celebrate a life's beginning has been reduced to memories and sighs.</p>
-
-        <p class="italic">Sighhh.</p>
-
-        <p class="italic">If only he knew...</p>
-
-        <p>That love is called love for a reason, and it's most effective in the dark times. Even when you're lonely, wanting to bear the brunt of your actions, inactions, and the circumstances life throws at you—that's when love prevails.</p>
-
-        <p>Now, I'm useless, probably going to be given out. But if I could say something to him now that he's gone... Open up to people who care. Communicate when things are tough. You don't have to take it all on your own.</p>
-        <p className="text-sm text-gray-500 mt-4">Image source: Unsplash.com</p>
-    
-        </article>`,
-    coverImage: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*PU2IrCNSq1HO1Xdh8EebFw.jpeg',
-    date: 'Jan 5, 2025',
-    readTime: '7 min read',
-    tags: ['Love', 'Motherhood', 'Cancer', 'Depression', 'Storytelling']
   },
   {
     "id": "3",
@@ -774,7 +775,7 @@ export const blogPosts: BlogPost[] = [
 
 // Function to get all blog posts
 export function getAllBlogPosts() {
-  return blogPosts.reverse();
+  return blogPosts;
 }
 
 // Function to get blog post by slug

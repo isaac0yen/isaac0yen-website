@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const posts = getAllBlogPosts();
+  const posts = getAllBlogPosts().reverse();
 
   return (
     <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
@@ -25,7 +25,7 @@ export default function BlogPage() {
           <p className="text-lg text-gray-500">Exploring tech, life, and everything in between - these are my unfiltered views and personal insights.</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 animate-fade-in">
-          {posts.reverse().map((post) => (
+          {posts.map((post) => (
             <div className="transform hover:scale-105 transition-transform duration-300 hover:shadow-xl rounded-xl" key={post.id}>
               <BlogCard
                 category={post.category}
