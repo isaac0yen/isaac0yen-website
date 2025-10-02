@@ -3,9 +3,15 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import BlogCard from '../../../components/BlogCard';
-import { getBlogPostBySlug, getRelatedPosts } from '../../../lib/blogData';
+import { getBlogPostBySlug, getRelatedPosts, blogPosts } from '../../../lib/blogData';
 
 type Params = Promise<{ slug: string }>
+
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { slug } = await params;
