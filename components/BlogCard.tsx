@@ -12,58 +12,40 @@ interface BlogCardProps {
 }
 
 const BlogCard = ({ slug, title, excerpt, coverImage, date, readTime, category }: BlogCardProps) => {
-  const categoryColors: { [key: string]: string } = {
-    'Technology': 'bg-blue-600',
-    'Design': 'bg-purple-600',
-    'Development': 'bg-green-600',
-    'Business': 'bg-yellow-600',
-    'Marketing': 'bg-red-600',
-    'Productivity': 'bg-indigo-600',
-    'Career': 'bg-pink-600',
-    'Write Ups': 'bg-teal-600',
-    'News': 'bg-orange-600',
-    'Other': 'bg-gray-600'
-  };
-
-  const categoryColor = categoryColors[category] || categoryColors['Other'];
-
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+    <div className="bg-white overflow-hidden border-4 border-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-300">
       <Link href={`/blog/${slug}`} className="block">
-        <div className="relative h-48 w-full">
+        <div className="relative h-48 w-full border-b-4 border-black bg-gray-100">
           <Image
             src={coverImage}
             alt={title}
             fill
             className="object-cover"
           />
-          <div className={`absolute top-2 right-2 ${categoryColor} text-white px-3 py-1 rounded-full text-sm font-medium`}>
-            {category}
+          <div className="absolute top-3 right-3 bg-white text-black px-3 py-1 border-2 border-black text-sm font-bold font-mono">
+            [{category}]
           </div>
         </div>
       </Link>
       
-      <div className="p-6">
-        <div className="flex items-center text-sm text-gray-500 mb-2">
-          <span>{date}</span>
-          <span className="mx-2">•</span>
+      <div className="p-6 bg-white">
+        <div className="flex items-center text-sm text-black mb-3 font-mono">
+          <span>&gt; {date}</span>
+          <span className="mx-2">|</span>
           <span>{readTime}</span>
         </div>
         
         <Link href={`/blog/${slug}`}>
-          <h3 className="text-xl font-bold mb-2 text-gray-800 hover:text-blue-600 transition">{title}</h3>
+          <h3 className="text-xl font-bold mb-3 text-black hover:underline transition font-mono">{title}</h3>
         </Link>
         
-        <p className="text-gray-600 mb-4 line-clamp-3">{excerpt}</p>
+        <p className="text-gray-700 mb-4 line-clamp-3 font-mono text-sm">{excerpt}</p>
         
         <Link 
           href={`/blog/${slug}`}
-          className="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center"
+          className="inline-block px-4 py-2 bg-black text-white border-2 border-black font-bold hover:bg-white hover:text-black transition duration-300 font-mono"
         >
-          Read More
-          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-          </svg>
+          READ_MORE &gt;&gt;
         </Link>
       </div>
     </div>

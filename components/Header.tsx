@@ -28,20 +28,17 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md py-3' : 'bg-white py-5'
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white border-b-2 border-black ${
+        scrolled ? 'py-3' : 'py-5'
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
-          className={`text-xl md:text-2xl font-semibold transition-colors duration-300 ${
-            scrolled ? 'text-gray-800' : 'text-gray-800'
-          } flex items-center`}
+          className="text-xl md:text-2xl font-semibold text-black flex items-center"
         >
-          <span className="text-blue-600 mr-2 text-xl"> {/* You can replace this with an actual logo */}
-            {/* Example: <svg className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">...</svg> */}
+          <span className="mr-2 text-xl border-2 border-black px-2 py-1">
             OI
           </span>
           Oyeniyi Isaac
@@ -51,51 +48,37 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
           <Link
             href="/"
-            className={`font-medium transition-colors duration-300 ${
-              scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-gray-700 hover:text-blue-600'
-            }`}
+            className="font-medium text-black hover:text-gray-600 transition-colors duration-300"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className={`font-medium transition-colors duration-300 ${
-              scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-gray-700 hover:text-blue-600'
-            }`}
+            className="font-medium text-black hover:text-gray-600 transition-colors duration-300"
           >
             About
           </Link>
           <Link
             href="/skills"
-            className={`font-medium transition-colors duration-300 ${
-              scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-gray-700 hover:text-blue-600'
-            }`}
+            className="font-medium text-black hover:text-gray-600 transition-colors duration-300"
           >
             Skills
           </Link>
           <Link
             href="/work"
-            className={`font-medium transition-colors duration-300 ${
-              scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-gray-700 hover:text-blue-600'
-            }`}
+            className="font-medium text-black hover:text-gray-600 transition-colors duration-300"
           >
             Work
           </Link>
           <Link
             href="/blog"
-            className={`font-medium transition-colors duration-300 ${
-              scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-gray-700 hover:text-blue-600'
-            }`}
+            className="font-medium text-black hover:text-gray-600 transition-colors duration-300"
           >
             Blog
           </Link>
           <Link
             href="/contact"
-            className={`px-4 py-2 rounded-lg transition-all duration-300 ${
-              scrolled
-                ? 'bg-blue-600 text-white hover:bg-blue-700'
-                : 'border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white'
-            }`}
+            className="px-4 py-2 bg-black text-white border-2 border-black hover:bg-white hover:text-black transition-all duration-300"
           >
             Contact
           </Link>
@@ -103,7 +86,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden transition-colors duration-300 text-gray-800"
+          className="md:hidden transition-colors duration-300 text-black"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -113,47 +96,47 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden bg-white border-t-2 border-black">
           <nav className="px-6 py-4">
             <div className="flex flex-col space-y-3">
               <Link
                 href="/"
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
+                className="text-black hover:text-gray-600 transition-colors duration-300 font-medium py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
+                className="text-black hover:text-gray-600 transition-colors duration-300 font-medium py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/skills"
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
+                className="text-black hover:text-gray-600 transition-colors duration-300 font-medium py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Skills
               </Link>
               <Link
                 href="/work"
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
+                className="text-black hover:text-gray-600 transition-colors duration-300 font-medium py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Work
               </Link>
               <Link
                 href="/blog"
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
+                className="text-black hover:text-gray-600 transition-colors duration-300 font-medium py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </Link>
               <Link
                 href="/contact"
-                className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300 mt-3"
+                className="inline-block px-4 py-2 bg-black text-white border-2 border-black font-medium hover:bg-white hover:text-black transition-colors duration-300 mt-3"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact

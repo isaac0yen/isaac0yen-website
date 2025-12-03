@@ -62,32 +62,34 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
   const relatedPosts = await getRelatedPosts(slug);
   return (
-    <div className="min-h-screen">
-      <article className="py-16 md:py-24">
+    <div className="min-h-screen bg-white">
+      <article className="py-16 md:py-24 border-b-4 border-black">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <header className="mb-12 text-center">
-            <div className="flex justify-center items-center text-sm text-gray-500 mb-4">
-              <span>{post.date}</span>
-              <span className="mx-2">•</span>
+          <header className="mb-12">
+            <div className="flex justify-center items-center text-sm text-black mb-6 font-mono">
+              <span>&gt; {post.date}</span>
+              <span className="mx-3">|</span>
               <span>{post.readTime}</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-              {post.title}
-            </h1>
+            <div className="max-w-4xl mx-auto border-4 border-black bg-white p-8 mb-8">
+              <h1 className="text-4xl md:text-5xl font-bold text-black font-mono">
+                # {post.title}
+              </h1>
+            </div>
 
-            <div className="flex justify-center flex-wrap gap-2 mb-8">
+            <div className="flex justify-center flex-wrap gap-3 mb-8">
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  className="px-4 py-2 bg-white text-black border-2 border-black text-sm font-bold font-mono hover:bg-black hover:text-white transition"
                 >
-                  {tag}
+                  [{tag}]
                 </span>
               ))}
             </div>
 
-            <div className="relative h-64 md:h-96 w-full rounded-lg overflow-hidden mb-8">
+            <div className="relative h-64 md:h-96 w-full overflow-hidden mb-8 border-4 border-black bg-gray-100">
               {post.coverImage !== "https://asset.cloudinary.com/dorypiien/66e2522bf9f3dc2a32ce6fcab6b69891" && (
                 <Image
                   src={post.coverImage}
@@ -100,19 +102,20 @@ export default async function BlogPostPage({ params }: { params: Params }) {
           </header>
 
           <div
-            className="prose prose-lg max-w-3xl mx-auto text-gray-800"
+            className="prose prose-lg max-w-3xl mx-auto text-gray-800 font-mono bg-white p-8"
             dangerouslySetInnerHTML={{ __html: post.content }}
           ></div>
         </div>
-<footer className="mt-16 pt-8 border-t border-gray-200">
-  <div className="flex justify-between items-center flex-wrap gap-4">
-    <div className="flex items-center space-x-4">
-      <span className="text-gray-600">Share:</span>
+<footer className="mt-16 pt-8 border-t-4 border-black max-w-4xl mx-auto">
+  <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+    <div className="flex items-center flex-wrap gap-3">
+      <span className="text-black font-bold font-mono">&gt; SHARE:</span>
       <a 
-        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}&text=${encodeURIComponent(post.title)}`}
+        href={`https://x.com/intent/tweet?url=https://isaac0yen.com/blog/${post.slug}&text=${encodeURIComponent(post.title)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-500 hover:text-blue-600"
+        className="p-2 border-2 border-black bg-white hover:bg-black hover:text-white transition"
+        aria-label="Share on X (Twitter)"
       >
         <svg
           className="w-5 h-5"
@@ -120,14 +123,15 @@ export default async function BlogPostPage({ params }: { params: Params }) {
           viewBox="0 0 24 24"
           aria-hidden="true"
         >
-          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
         </svg>
       </a>
       <a 
-        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}`}
+        href={`https://www.facebook.com/sharer/sharer.php?u=https://isaac0yen.com/blog/${post.slug}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-500 hover:text-blue-600"
+        className="p-2 border-2 border-black bg-white hover:bg-black hover:text-white transition"
+        aria-label="Share on Facebook"
       >
         <svg
           className="w-5 h-5"
@@ -143,10 +147,11 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         </svg>
       </a>
       <a 
-        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}`}
+        href={`https://www.linkedin.com/sharing/share-offsite/?url=https://isaac0yen.com/blog/${post.slug}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-500 hover:text-blue-600"
+        className="p-2 border-2 border-black bg-white hover:bg-black hover:text-white transition"
+        aria-label="Share on LinkedIn"
       >
         <svg
           className="w-5 h-5"
@@ -161,19 +166,21 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
     <Link
       href="/blog"
-      className="text-blue-600 hover:text-blue-800 inline-flex items-center">
-      ← Back to Blog
+      className="px-4 py-2 bg-black text-white border-2 border-black font-bold hover:bg-white hover:text-black transition font-mono whitespace-nowrap">
+      &lt;&lt; BACK_TO_BLOG
     </Link>
   </div>
 </footer>
       </article>
 
       {relatedPosts.length > 0 && (
-        <section className="py-16 md:py-20">
+        <section className="py-16 md:py-20 bg-white border-t-4 border-black">
           <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-8 text-center md:text-left text-gray-900">
-              Related Posts
-            </h2>
+            <div className="inline-block border-4 border-black bg-white px-6 py-3 mb-8">
+              <h2 className="text-3xl font-bold text-black font-mono">
+                &gt; RELATED_POSTS
+              </h2>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {relatedPosts.map((relatedPost) => (

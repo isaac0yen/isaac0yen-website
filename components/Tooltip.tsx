@@ -32,7 +32,7 @@ const Tooltip = ({ description }: TooltipProps) => {
 
       {/* Tooltip Content */}
       {isHovered && (
-        <div className="absolute z-10 left-0 -top-20 w-48 p-3 bg-white rounded-lg shadow-lg text-sm text-gray-600">
+        <div className="absolute z-10 left-0 -top-20 w-48 p-3 bg-white border-2 border-black text-sm text-gray-600">
           {description}
         </div>
       )}
