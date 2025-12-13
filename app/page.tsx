@@ -20,9 +20,6 @@ export default function Home() {
               <h2 className="text-2xl md:text-4xl font-light mb-6 text-gray-600">
                 A Software Engineer
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
-                I build exceptional digital experiences for web, mobile, and desktop platforms.
-              </p>
               <div className="flex space-x-4">
                 <Link
                   href="/contact"
