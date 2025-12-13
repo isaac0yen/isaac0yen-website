@@ -63,33 +63,33 @@ export default async function BlogPostPage({ params }: { params: Params }) {
   const relatedPosts = await getRelatedPosts(slug);
   return (
     <div className="min-h-screen bg-white">
-      <article className="py-16 md:py-24 border-b-4 border-black">
+      <article className="py-8 md:py-16 lg:py-24 border-b-2 md:border-b-4 border-black">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <header className="mb-12">
-            <div className="flex justify-center items-center text-sm text-black mb-6 font-mono">
+          <header className="mb-8 md:mb-12">
+            <div className="flex justify-center items-center text-xs md:text-sm text-black mb-4 md:mb-6 font-mono">
               <span>&gt; {post.date}</span>
-              <span className="mx-3">|</span>
+              <span className="mx-2 md:mx-3">|</span>
               <span>{post.readTime}</span>
             </div>
 
-            <div className="max-w-4xl mx-auto border-4 border-black bg-white p-8 mb-8">
-              <h1 className="text-4xl md:text-5xl font-bold text-black font-mono">
+            <div className="max-w-4xl mx-auto border-2 md:border-4 border-black bg-white p-4 md:p-6 lg:p-8 mb-6 md:mb-8">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black font-mono leading-tight">
                 # {post.title}
               </h1>
             </div>
 
-            <div className="flex justify-center flex-wrap gap-3 mb-8">
+            <div className="flex justify-center flex-wrap gap-2 md:gap-3 mb-6 md:mb-8">
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-4 py-2 bg-white text-black border-2 border-black text-sm font-bold font-mono hover:bg-black hover:text-white transition"
+                  className="px-2 py-1 md:px-4 md:py-2 bg-white text-black border-2 border-black text-xs md:text-sm font-bold font-mono hover:bg-black hover:text-white transition"
                 >
                   [{tag}]
                 </span>
               ))}
             </div>
 
-            <div className="relative h-64 md:h-96 w-full overflow-hidden mb-8 border-4 border-black bg-gray-100">
+            <div className="relative h-48 md:h-80 lg:h-96 w-full overflow-hidden mb-6 md:mb-8 border-2 md:border-4 border-black bg-gray-100">
               {post.coverImage !== "https://asset.cloudinary.com/dorypiien/66e2522bf9f3dc2a32ce6fcab6b69891" && (
                 <Image
                   src={post.coverImage}
@@ -102,14 +102,14 @@ export default async function BlogPostPage({ params }: { params: Params }) {
           </header>
 
           <div
-            className="prose prose-lg max-w-3xl mx-auto text-gray-800 font-mono bg-white p-8"
+            className="prose prose-sm md:prose-lg max-w-3xl mx-auto text-gray-800 font-mono bg-white p-4 md:p-6 lg:p-8"
             dangerouslySetInnerHTML={{ __html: post.content }}
           ></div>
         </div>
-<footer className="mt-16 pt-8 border-t-4 border-black max-w-4xl mx-auto">
-  <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-    <div className="flex items-center flex-wrap gap-3">
-      <span className="text-black font-bold font-mono">&gt; SHARE:</span>
+<footer className="mt-8 md:mt-16 pt-6 md:pt-8 border-t-2 md:border-t-4 border-black max-w-4xl mx-auto">
+  <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-6">
+    <div className="flex items-center flex-wrap gap-2 md:gap-3">
+      <span className="text-black font-bold font-mono text-sm md:text-base">&gt; SHARE:</span>
       <a 
         href={`https://x.com/intent/tweet?url=https://isaac0yen.com/blog/${post.slug}&text=${encodeURIComponent(post.title)}`}
         target="_blank"
@@ -118,7 +118,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         aria-label="Share on X (Twitter)"
       >
         <svg
-          className="w-5 h-5"
+          className="w-4 h-4 md:w-5 md:h-5"
           fill="currentColor"
           viewBox="0 0 24 24"
           aria-hidden="true"
@@ -134,7 +134,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         aria-label="Share on Facebook"
       >
         <svg
-          className="w-5 h-5"
+          className="w-4 h-4 md:w-5 md:h-5"
           fill="currentColor"
           viewBox="0 0 24 24"
           aria-hidden="true"
@@ -154,7 +154,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         aria-label="Share on LinkedIn"
       >
         <svg
-          className="w-5 h-5"
+          className="w-4 h-4 md:w-5 md:h-5"
           fill="currentColor"
           viewBox="0 0 24 24"
           aria-hidden="true"
@@ -166,7 +166,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
     <Link
       href="/blog"
-      className="px-4 py-2 bg-black text-white border-2 border-black font-bold hover:bg-white hover:text-black transition font-mono whitespace-nowrap">
+      className="px-3 py-2 md:px-4 bg-black text-white border-2 border-black font-bold hover:bg-white hover:text-black transition font-mono whitespace-nowrap text-sm md:text-base w-full md:w-auto text-center">
       &lt;&lt; BACK_TO_BLOG
     </Link>
   </div>
@@ -174,15 +174,15 @@ export default async function BlogPostPage({ params }: { params: Params }) {
       </article>
 
       {relatedPosts.length > 0 && (
-        <section className="py-16 md:py-20 bg-white border-t-4 border-black">
+        <section className="py-8 md:py-16 lg:py-20 bg-white border-t-2 md:border-t-4 border-black">
           <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <div className="inline-block border-4 border-black bg-white px-6 py-3 mb-8">
-              <h2 className="text-3xl font-bold text-black font-mono">
+            <div className="inline-block border-2 md:border-4 border-black bg-white px-4 py-2 md:px-6 md:py-3 mb-6 md:mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-black font-mono">
                 &gt; RELATED_POSTS
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {relatedPosts.map((relatedPost) => (
                 <BlogCard
                   category={relatedPost.category}

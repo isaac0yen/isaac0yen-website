@@ -5,3 +5,133 @@
     font-family: 'Courier New', Courier, monospace;
   }
 }
+
+@layer components {
+  /* Responsive blog content styles */
+  .prose article {
+    @apply text-sm md:text-base;
+  }
+  
+  .prose article header {
+    @apply px-4 py-8 md:px-8 md:py-16;
+  }
+  
+  .prose article h1 {
+    @apply text-2xl md:text-4xl lg:text-5xl;
+  }
+  
+  .prose article h2 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+  
+  .prose article h3 {
+    @apply text-lg md:text-xl lg:text-2xl;
+  }
+  
+  .prose article section,
+  .prose article div[class*="border"] {
+    @apply border-2 md:border-4;
+  }
+  
+  .prose article section {
+    @apply p-4 md:p-6 lg:p-8 mb-6 md:mb-8 lg:mb-12;
+  }
+  
+  .prose article div[class*="p-"] {
+    @apply p-3 md:p-4 lg:p-6;
+  }
+  
+  .prose article div[class*="px-"] {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+  
+  .prose article div[class*="py-"] {
+    @apply py-4 md:py-8 lg:py-16;
+  }
+  
+  .prose article img {
+    @apply w-full h-auto;
+  }
+  
+  .prose article .grid {
+    @apply gap-4 md:gap-6 lg:gap-8;
+  }
+  
+  .prose article footer {
+    @apply px-4 py-6 md:px-8 md:py-12;
+  }
+  
+  /* Make all border-l responsive */
+  .prose article [class*="border-l-"] {
+    @apply border-l-2 md:border-l-4;
+  }
+  
+  /* Make all border-b responsive */
+  .prose article [class*="border-b-"] {
+    @apply border-b-2 md:border-b-4;
+  }
+  
+  /* Make all border-t responsive */
+  .prose article [class*="border-t-"] {
+    @apply border-t-2 md:border-t-4;
+  }
+  
+  /* Responsive spacing */
+  .prose article [class*="space-y-"] {
+    @apply space-y-4 md:space-y-6 lg:space-y-8;
+  }
+  
+  .prose article [class*="space-x-"] {
+    @apply space-x-3 md:space-x-4 lg:space-x-6;
+  }
+  
+  .prose article [class*="gap-"] {
+    @apply gap-4 md:gap-6 lg:gap-8;
+  }
+  
+  /* Responsive margins */
+  .prose article [class*="mb-"] {
+    @apply mb-3 md:mb-4 lg:mb-6;
+  }
+  
+  .prose article [class*="mt-"] {
+    @apply mt-3 md:mt-4 lg:mt-6;
+  }
+  
+  .prose article [class*="my-"] {
+    @apply my-4 md:my-6 lg:my-8;
+  }
+  
+  /* Responsive text sizes for specific elements */
+  .prose article [class*="text-4xl"],
+  .prose article [class*="text-5xl"] {
+    @apply text-2xl md:text-4xl lg:text-5xl;
+  }
+  
+  .prose article [class*="text-3xl"] {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+  
+  .prose article [class*="text-2xl"] {
+    @apply text-lg md:text-xl lg:text-2xl;
+  }
+  
+  .prose article [class*="text-xl"] {
+    @apply text-base md:text-lg lg:text-xl;
+  }
+  
+  /* Ensure images in blog content are responsive */
+  .prose article img[class*="border"] {
+    @apply border-2 md:border-4;
+  }
+  
+  /* Make inline blocks responsive */
+  .prose article .inline-block[class*="px-"] {
+    @apply px-3 py-2 md:px-6 md:py-4;
+  }
+  
+  /* Responsive padding for nested divs */
+  .prose article > div > div[class*="p-"] {
+    @apply p-4 md:p-6 lg:p-8;
+  }
+}
