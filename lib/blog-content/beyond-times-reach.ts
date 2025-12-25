@@ -1,6 +1,6 @@
 export function getBeyondTimesReachContent(): string {
   return `
-<article class="max-w-3xl mx-auto space-y-6 md:space-y-8 font-mono text-sm md:text-base">
+<article class="w-full space-y-6 md:space-y-8 font-mono text-sm md:text-base">
     <section class="mb-8 md:mb-12 border-2 md:border-4 border-black bg-white p-4 md:p-6">
         <div class="border-b-2 md:border-b-4 border-black pb-3 md:pb-4 mb-4 md:mb-6">
           <h2 class="text-xl md:text-2xl font-bold text-black">&gt; HER_POV</h2>

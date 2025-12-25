@@ -1,6 +1,6 @@
 export function getProblemsOrChallengesContent(): string {
   return `
-<article class="max-w-3xl mx-auto space-y-6 md:space-y-8 font-mono text-sm md:text-base">
+<article class="w-full space-y-6 md:space-y-8 font-mono text-sm md:text-base">
     <section class="mb-8 md:mb-12 border-2 md:border-4 border-black bg-white p-4 md:p-6">
         <div class="text-gray-800 leading-relaxed space-y-4 md:space-y-6">
             <p class="text-base md:text-lg font-bold text-black border-b-2 border-black pb-2">&gt; What do we define as problems and are they really a bad thing?</p>

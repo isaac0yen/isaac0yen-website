@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const posts = getAllBlogPosts().reverse();
+  const posts = getAllBlogPosts();
 
   return (
     <section className="py-12 md:py-24 bg-white border-b border-black">

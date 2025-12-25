@@ -1,5 +1,5 @@
 export function getTheStoryOfATelephoneContent(): string {
-  return `<article class="max-w-none text-gray-800 leading-relaxed space-y-4 md:space-y-6 font-mono text-sm md:text-base">
+  return `<article class="w-full text-gray-800 leading-relaxed space-y-4 md:space-y-6 font-mono text-sm md:text-base">
         <div class="border-2 md:border-4 border-black bg-white p-3 md:p-6">
           <p class="mb-3 md:mb-4">&gt; In the midst of dust and old piles of appliances, I lie and wait for my final demise. All the hopes and dreams of my evergreen use—building a family and being with them till the very end—fade away.</p>
 

@@ -1,7 +1,7 @@
 // This file contains the content for "Everything Was Perfect — Until It Wasn't" blog post
 
 export function getEverythingWasPerfectContent(): string {
-  return `<article class="max-w-4xl mx-auto bg-white font-mono text-sm md:text-base">
+  return `<article class="w-full bg-white font-mono text-sm md:text-base">
       <!-- Hero Section -->
       <header class="relative bg-black text-white border-2 md:border-4 border-black overflow-hidden">
         <div class="relative z-10 px-4 py-8 md:px-8 md:py-16 text-center">
@@ -23,9 +23,9 @@ export function getEverythingWasPerfectContent(): string {
           <div class="flex justify-center mb-6 md:mb-8">
             <img src="https://res.cloudinary.com/dorypiien/image/upload/v1746479429/IMG-20250505-WA0031_oxjlmo.jpg" 
                  alt="AI-Powered WhatsApp Bot Architecture" 
-                 class="w-full max-w-2xl border-2 md:border-4 border-black" />
+                 class="w-full max-w-full border-2 md:border-4 border-black" />
           </div>
-          <div class="max-w-3xl mx-auto border-2 md:border-4 border-black bg-white p-4 md:p-6">
+          <div class="w-full border-2 md:border-4 border-black bg-white p-4 md:p-6">
             <p class="text-base md:text-lg text-gray-800 leading-relaxed">&gt; What began as an experimental project evolved into a robust messaging platform that seamlessly integrated AI capabilities within WhatsApp's ecosystem — until we faced our ultimate stress test.</p>
           </div>
         </section>
@@ -33,7 +33,7 @@ export function getEverythingWasPerfectContent(): string {
         <!-- Executive Summary -->
         <section class="mb-8 md:mb-16 bg-black text-white border-2 md:border-4 border-black p-4 md:p-8">
           <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center border-b-2 md:border-b-4 border-white pb-3 md:pb-4">[ EXECUTIVE_SUMMARY ]</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full">
             <div class="text-center border-2 border-white p-4 md:p-6">
               <div class="text-2xl md:text-3xl font-bold mb-2">5,200+</div>
               <div class="text-gray-300 text-sm md:text-base">&gt; Messages Processed</div>
@@ -48,7 +48,7 @@ export function getEverythingWasPerfectContent(): string {
         <!-- Core Capabilities -->
         <section class="mb-8 md:mb-16">
           <h2 class="text-xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center border-2 md:border-4 border-black inline-block px-4 py-2 md:px-6 md:py-3 bg-white">[ CORE_CAPABILITIES ]</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-5xl mx-auto mt-6 md:mt-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full mt-6 md:mt-8">
             <div class="bg-white border-2 md:border-4 border-black p-4 md:p-6 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-300">
               <div class="flex items-center mb-3 md:mb-4 border-b-2 border-black pb-2 md:pb-3">
                 <span class="text-xl md:text-2xl mr-3 md:mr-4">⏰</span>
@@ -90,7 +90,7 @@ export function getEverythingWasPerfectContent(): string {
             <div class="p-4 md:p-8">
               <img src="https://res.cloudinary.com/dorypiien/image/upload/v1748261264/deepseek_mermaid_20250526_ccff5e_gr7t4v.png" 
                    alt="System Architecture Diagram" 
-                   class="w-full max-w-4xl mx-auto border-2 border-black" />
+                   class="w-full max-w-full mx-auto border-2 border-black" />
               <p class="text-xs md:text-sm text-gray-600 text-center mt-3 md:mt-4 font-mono">// System workflow diagram built with Mermaid.js</p>
             </div>
             
@@ -199,7 +199,7 @@ export function getEverythingWasPerfectContent(): string {
         <section class="mb-8 md:mb-16">
           <div class="bg-black text-white border-2 md:border-4 border-black p-4 md:p-8">
             <h2 class="text-xl md:text-3xl font-bold mb-4 md:mb-6 text-center border-b-2 md:border-b-4 border-white pb-3 md:pb-4">[ BUSINESS_PERFORMANCE ]</h2>
-            <div class="max-w-2xl mx-auto">
+            <div class="w-full">
               <div class="bg-white text-black border-2 md:border-4 border-white p-4 md:p-6 mb-4 md:mb-6">
                 <div class="text-center">
                   <div class="text-3xl md:text-4xl font-bold mb-2">₦100,000+</div>
@@ -216,7 +216,7 @@ export function getEverythingWasPerfectContent(): string {
 
       <!-- Footer -->
       <footer class="bg-black text-white border-t-2 md:border-t-4 border-black px-4 py-6 md:px-8 md:py-12">
-        <div class="max-w-4xl mx-auto">
+        <div class="w-full">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div class="border-2 border-white p-4 md:p-6">
               <h3 class="text-lg md:text-xl font-bold mb-3 md:mb-4 border-b-2 border-white pb-2">[ CONTACT ]</h3>

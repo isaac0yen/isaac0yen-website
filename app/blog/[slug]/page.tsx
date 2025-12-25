@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
           </header>
 
           <div
-            className="prose prose-sm md:prose-lg max-w-3xl mx-auto text-gray-800 font-mono bg-white p-4 md:p-6 lg:p-8"
+            className="max-w-4xl mx-auto text-gray-800 font-mono bg-white p-4 md:p-6 lg:p-8 overflow-hidden break-words"
             dangerouslySetInnerHTML={{ __html: post.content }}
           ></div>
         </div>

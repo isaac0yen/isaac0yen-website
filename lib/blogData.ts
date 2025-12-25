@@ -83,9 +83,19 @@ export const blogPosts: BlogPost[] = [
   }
 ];
 
-// Function to get all blog posts
+// Helper to parse date string to Date object for sorting
+function parseDate(dateStr: string): Date {
+  return new Date(dateStr);
+}
+
+// Sort posts by date (latest first)
+function sortByLatest(posts: BlogPost[]): BlogPost[] {
+  return [...posts].sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime());
+}
+
+// Function to get all blog posts (latest first)
 export function getAllBlogPosts() {
-  return blogPosts;
+  return sortByLatest(blogPosts);
 }
 
 // Function to get blog post by slug
@@ -93,9 +103,9 @@ export function getBlogPostBySlug(slug: string) {
   return blogPosts.find(post => post.slug === slug);
 }
 
-// Function to get related posts (excluding the current post)
+// Function to get related posts (excluding the current post, latest first)
 export function getRelatedPosts(currentSlug: string, limit: number = 3) {
-  return blogPosts
+  return sortByLatest(blogPosts)
     .filter(post => post.slug !== currentSlug)
     .slice(0, limit);
 }

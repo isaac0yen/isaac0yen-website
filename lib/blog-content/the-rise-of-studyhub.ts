@@ -1,7 +1,7 @@
 // This file contains the content for "The Rise of StudyHub" blog post
 
 export function getTheRiseOfStudyhubContent(): string {
-  return `<article class="max-w-4xl mx-auto bg-white font-mono text-sm md:text-base">
+  return `<article class="w-full bg-white font-mono text-sm md:text-base">
       <!-- Hero Section -->
       <header class="relative bg-black text-white border-2 md:border-4 border-black overflow-hidden">
         <div class="relative z-10 px-4 py-8 md:px-8 md:py-16 text-center">
@@ -25,7 +25,7 @@ export function getTheRiseOfStudyhubContent(): string {
       <div class="px-4 py-6 md:px-8 md:py-12">
         <!-- Problem Statement -->
         <section class="mb-8 md:mb-16">
-          <div class="max-w-3xl mx-auto text-center">
+          <div class="w-full text-center">
             <h2 class="text-xl md:text-3xl font-bold text-black mb-4 md:mb-6 border-2 md:border-4 border-black inline-block px-4 py-2 md:px-6 md:py-3 bg-white">[ THE_PROBLEM ]</h2>
             <div class="bg-white border-2 md:border-4 border-black p-4 md:p-8 mt-6 md:mt-8">
               <p class="text-base md:text-lg text-black font-bold leading-relaxed mb-3 md:mb-4">&gt; "Heyyy, Please do you have [COURSE_CODE] PDF?"</p>
@@ -181,7 +181,7 @@ export function getTheRiseOfStudyhubContent(): string {
         <section class="mb-8 md:mb-16">
           <h2 class="text-xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center border-2 md:border-4 border-black inline-block px-4 py-2 md:px-6 md:py-3 bg-white">[ ROADMAP ]</h2>
           <div class="bg-white border-2 md:border-4 border-black p-4 md:p-8 mt-6 md:mt-8">
-            <div class="max-w-3xl mx-auto space-y-4 md:space-y-6">
+            <div class="w-full space-y-4 md:space-y-6">
               <div class="flex items-start space-x-3 md:space-x-4 bg-gray-100 border-2 border-black p-3 md:p-4">
                 <div class="font-bold text-black text-sm md:text-base">[1]</div>
                 <div>
@@ -212,7 +212,7 @@ export function getTheRiseOfStudyhubContent(): string {
 
       <!-- Footer -->
       <footer class="bg-black text-white border-t-2 md:border-t-4 border-black px-4 py-6 md:px-8 md:py-12">
-        <div class="max-w-4xl mx-auto">
+        <div class="w-full">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div class="border-2 border-white p-4 md:p-6">
               <h3 class="text-lg md:text-xl font-bold mb-3 md:mb-4 border-b-2 border-white pb-2">[ CONTRIBUTORS ]</h3>
