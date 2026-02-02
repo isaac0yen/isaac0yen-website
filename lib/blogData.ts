@@ -4,7 +4,8 @@ import {
   getTheStoryOfATelephoneContent,
   getProblemsOrChallengesContent,
   getEverythingWasPerfectContent,
-  getTheRiseOfStudyhubContent
+  getTheRiseOfStudyhubContent,
+  getBuildingAProductContent
 } from './blog-content';
 
 export interface BlogPost {
@@ -21,6 +22,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: '6',
+    category: 'Technology',
+    slug: 'building-a-product',
+    title: 'Building a Product',
+    excerpt: 'At some point, speed stops being about how fast you can write features, and starts being about how well your decisions age.',
+    content: getBuildingAProductContent(),
+    coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1770038875/Screenshot_from_2026-02-02_14-00-51_ukzhuc.png',
+    date: 'Feb 2, 2026',
+    readTime: '3 min read',
+    tags: ['Product', 'Engineering', 'Leadership', 'Infrastructure']
+  },
   {
     id: '2',
     category: 'Write Ups',

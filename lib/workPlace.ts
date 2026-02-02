@@ -15,7 +15,7 @@ const workExperiences = [
   },
   {
     companyName: 'Bitscard',
-    role: 'Software Engineer (Frontend)',
+    role: 'Software Engineer',
     imageSrc: '/assets/bitscard.png',
     period: 'Oct 2024 - Jan 2026',
     link: 'https://bitscard.io',
