@@ -11,14 +11,14 @@ const workExperiences = [
     role: 'Chief Technology Officer (CTO)',
     imageSrc: '/assets/fuse.jpeg',
     period: 'April 2025 - Till date',
-    link: 'https://selar.com/m/Fusevarsity',
+    link: 'https://fusevarsity.com',
   },
   {
     companyName: 'Bitscard',
     role: 'Software Engineer',
     imageSrc: '/assets/bitscard.png',
     period: 'Oct 2024 - Jan 2026',
-    link: 'https://bitscard.io',
+    link: 'https://bitscard.com',
   },
   {
     companyName: 'Mustard.ng',
