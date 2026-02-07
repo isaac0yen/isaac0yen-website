@@ -5,7 +5,8 @@ import {
   getProblemsOrChallengesContent,
   getEverythingWasPerfectContent,
   getTheRiseOfStudyhubContent,
-  getBuildingAProductContent
+  getBuildingAProductContent,
+  getImgstatContextContent
 } from './blog-content';
 
 export interface BlogPost {
@@ -22,6 +23,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: '7',
+    category: 'Technology',
+    slug: 'imgstat-giving-ai-context',
+    title: 'imgstat — giving AI context about your images',
+    excerpt: 'LLMs can’t see your images. They also can’t infer dimensions unless you explicitly tell them. That gap is what imgstat solves.',
+    content: getImgstatContextContent(),
+    coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1770490644/WhatsApp_Image_2026-02-07_at_19.28.05_1_ifdhzv.jpg',
+    date: 'Feb 7, 2026',
+    readTime: '3 min read',
+    tags: ['cli', 'tooling', 'ai', 'npm', 'productivity']
+  },
   {
     id: '6',
     category: 'Technology',
