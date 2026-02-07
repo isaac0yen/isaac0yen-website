@@ -28,9 +28,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white border-b-2 border-black ${
-        scrolled ? 'py-3' : 'py-5'
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white border-b-2 border-black ${scrolled ? 'py-3' : 'py-5'
+        }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
@@ -58,12 +57,7 @@ const Header = () => {
           >
             About
           </Link>
-          <Link
-            href="/skills"
-            className="font-medium text-black hover:text-gray-600 transition-colors duration-300"
-          >
-            Skills
-          </Link>
+
           <Link
             href="/work"
             className="font-medium text-black hover:text-gray-600 transition-colors duration-300"
@@ -113,13 +107,7 @@ const Header = () => {
               >
                 About
               </Link>
-              <Link
-                href="/skills"
-                className="text-black hover:text-gray-600 transition-colors duration-300 font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Skills
-              </Link>
+
               <Link
                 href="/work"
                 className="text-black hover:text-gray-600 transition-colors duration-300 font-medium py-2"

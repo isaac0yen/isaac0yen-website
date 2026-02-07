@@ -10,9 +10,10 @@ interface WorkCardProps {
   imageSrc: string;
   period: string;
   link: string;
+  description?: string;
 }
 
-const WorkCard = ({ companyName, role, imageSrc, period, link }: WorkCardProps) => {
+const WorkCard = ({ companyName, role, imageSrc, period, link, description }: WorkCardProps) => {
   return (
     <motion.div
       className="group relative overflow-hidden border-2 border-black hover:bg-gray-50 transition duration-300 p-4"
@@ -36,6 +37,11 @@ const WorkCard = ({ companyName, role, imageSrc, period, link }: WorkCardProps) 
         <h3 className="text-lg font-semibold mb-1 text-black">{companyName}</h3>
         <p className="text-sm text-gray-600 mb-2">{role}</p>
         <p className="text-xs text-gray-500 mb-2">{period}</p>
+        {description && (
+          <p className="text-sm text-gray-700 italic mb-3 border-l-2 border-gray-300 pl-2">
+            {description}
+          </p>
+        )}
 
         {/* View Company Button */}
         <Link href={link} target="_blank" className="inline-flex items-center text-black hover:text-gray-600 border-b-2 border-black hover:border-gray-600 transition">

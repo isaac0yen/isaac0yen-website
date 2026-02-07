@@ -14,34 +14,37 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-10 md:mb-0">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              <h1 className="text-3xl md:text-6xl font-bold mb-4">
                 Hi, I'm Isaac
               </h1>
-              <h2 className="text-2xl md:text-4xl font-light mb-6 text-gray-600">
-                A Software Engineer
+              <h2 className="text-xl md:text-4xl font-light mb-6 text-gray-600">
+                I build software systems.
               </h2>
+              <p className="text-base md:text-xl text-gray-500 mb-8 max-w-lg">
+                Focused on architecture, delivery, and long-term maintainability.
+              </p>
               <div className="flex space-x-4">
                 <Link
                   href="/contact"
-                  className="px-6 py-3 bg-black text-white border border-black font-semibold hover:bg-white hover:text-black transition duration-300"
+                  className="px-5 py-2.5 md:px-6 md:py-3 bg-black text-white border border-black font-semibold hover:bg-white hover:text-black transition duration-300"
                 >
                   Contact Me
                 </Link>
                 <Link
                   href="/work"
-                  className="px-6 py-3 border border-black text-black font-semibold hover:bg-black hover:text-white transition duration-300"
+                  className="px-5 py-2.5 md:px-6 md:py-3 border border-black text-black font-semibold hover:bg-black hover:text-white transition duration-300"
                 >
                   View My Work
                 </Link>
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <div className="relative w-64 h-80 md:w-80 md:h-96 overflow-hidden border-2 border-black">
+              <div className="relative w-72 h-96 md:w-96 md:h-[28rem] overflow-hidden border-2 border-black">
                 <Image
                   src="/assets/me-2.jpeg"
                   alt="Oyeniyi Isaac"
                   fill
-                  className="object-cover object-bottom"
+                  className="object-cover object-bottom scale-130 origin-bottom"
                 />
               </div>
             </div>
@@ -55,11 +58,8 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h2 className="text-3xl font-bold mb-6 text-black">About Me</h2>
-              <p className="text-gray-600 mb-6">
-                I'm a full-stack developer proficient in ReactJS, Apollo GraphQL, Express, ElectronJS, and various databases. I specialize in developing and maintaining web, mobile, and desktop applications, with a focus on building robust backend services.
-              </p>
-              <p className="text-gray-600 mb-6">
-                My expertise includes creating cross-platform applications, optimizing for performance, and ensuring security and scalability across all projects.
+              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                I work across product engineering, backend systems, and infrastructure.
               </p>
               <Link
                 href="/about"
@@ -87,42 +87,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Preview Section */}
-      <section className="py-20 bg-white border-b border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-black">My Skills</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              I am skilled in TypeScript, Node.js, Electron.js and React.js, with expertise in MySQL and MongoDB databases.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap justify-center">
-            {['TypeScript', 'Node.js', 'Electron.js', 'React.js', 'MySQL', 'MongoDB'].map((skill) => (
-              <div key={skill} className="m-2 px-6 py-3 bg-white text-black border-2 border-black font-medium hover:bg-black hover:text-white transition duration-300">
-                {skill}
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link
-              href="/skills"
-              className="px-6 py-3 bg-black text-white border border-black font-semibold hover:bg-white hover:text-black transition duration-300"
-            >
-              View All Skills
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Places I've Worked */}
       <section className="py-20 bg-white border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-black">Places I've Worked</h2>
+            <h2 className="text-3xl font-bold mb-4 text-black">My Career so far.</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              A collection of places where I've contributed my skills and gained valuable experience.
+              Places I've worked and the systems I've contributed to.
             </p>
           </div>
 
@@ -204,21 +175,6 @@ export default function Home() {
               View All Posts
             </Link>
           </div>
-        </div>
-      </section>
-      {/* Contact CTA */}
-      <section className="py-20 bg-black text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Start a Project?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Let's talk about your ideas and how we can bring them to life. I'm here to help you create something amazing.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block px-8 py-4 bg-white text-black border-2 border-white font-semibold text-lg hover:bg-black hover:text-white transition duration-300"
-          >
-            Get in Touch
-          </Link>
         </div>
       </section>
     </>

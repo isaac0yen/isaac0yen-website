@@ -11,10 +11,10 @@ export default function About() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-8 sm:mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-black mb-6">
-              About <span className="text-black">Isaac</span>
+              Building software <span className="text-black">systems</span>
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto px-4">
-              A passionate full-stack developer dedicated to creating exceptional digital experiences
+              With long-term intent, focusing on scalability, maintainability, and real-world impact.
             </p>
             <div className="w-24 h-1 bg-black mx-auto mt-8"></div>
           </div>
@@ -56,13 +56,10 @@ export default function About() {
                   Who I Am
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-6 text-sm sm:text-base">
-                  Hi, I'm Oyeniyi Isaac Inioluwa, a dedicated and proficient Software Engineer
-                  specializing in Node.js, React, Apollo GraphQL, Express, ElectronJS, and
-                  various database technologies including MySQL and MongoDB.
+                  I am a product engineer and systems thinker who bridges the gap between technical implementation and business value. My work focuses on designing architectures that support growth without accumulating unmanageable technical debt.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-6 text-sm sm:text-base">
-                  I'm passionate about creating exceptional digital experiences and focus on
-                  developing scalable, secure, and high-performance web, mobile, and desktop applications.
+                  I prioritize clarity, stability, and performance. Whether I’m designing a backend schema or optimizing a frontend interaction, I’m always asking: "How will this behave in production for the next two years?"
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
@@ -84,31 +81,23 @@ export default function About() {
                 Professional Journey
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6 text-sm sm:text-base">
-                My technical expertise spans front-end and back-end development, with a strong
-                emphasis on building robust backend services and cross-platform applications.
-                I focus on creating solutions that are not only functional but also maintainable
-                and scalable.
+                I’ve moved from writing isolated code features to engineering complete systems. My expertise lies in making the hard trade-offs: choosing the right infrastructure, ensuring data integrity, and balancing velocity with reliability.
               </p>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Through continuous learning and hands-on experience, I've developed a deep
-                understanding of modern development practices and architectural patterns.
+                I have deep experience with backend services, cross-platform deployments, and database architecture, but I define my seniority by the problems I solve, not just the tools I use.
               </p>
             </div>
 
             <div className="bg-white border-2 border-black p-6 sm:p-8 hover:bg-gray-50 transition-all duration-300">
               <h3 className="text-xl sm:text-2xl font-bold text-black mb-6 flex items-center">
                 <div className="w-6 h-6 sm:w-8 sm:h-8 bg-black mr-3"></div>
-                Leadership & Innovation
+                Leadership & Systems
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6 text-sm sm:text-base">
-                I'm the founder and lead software engineer of My Genius, a project I've been
-                steering since January 2024. This venture represents my commitment to innovation
-                and my vision for creating impactful technology solutions.
+                At Fuse Varsity and My Genius, I’ve taken ownership of technical roadmaps and architectural standards. I believe leadership means enabling others to ship correctly and efficiently.
               </p>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                I've gained valuable industry experience through roles at leading tech companies
-                like Mustard.ng, Syllabux, and FUSE Varsity, contributing to innovative projects
-                across Nigeria.
+                I align engineering efforts with product innovation, ensuring that technical choices serve the business mission rather than just following trends.
               </p>
             </div>
           </div>
@@ -138,13 +127,10 @@ export default function About() {
                 Vision & Impact
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6 text-sm sm:text-base">
-                Beyond technical proficiency, I'm known for my problem-solving mindset and
-                passion for leveraging technology to address real-world challenges. I believe
-                in the power of code to transform ideas into reality.
+                Software is a tool for solving human problems. My goal is to build systems that are invisible to the user because they just work—fast, securely, and reliably.
               </p>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Through My Genius and my professional endeavors, I continue to drive innovation
-                while expanding my expertise and impact in the software development field.
+                I am driven by the challenge of complexity. I want to build the engines that power businesses and the interfaces that empower users, ensuring every line of code adds lasting value.
               </p>
             </div>
           </div>

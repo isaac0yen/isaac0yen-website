@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-black text-white border-t-4 border-white">
       <div className="container mx-auto px-4 py-16">
@@ -12,9 +12,7 @@ const Footer = () => {
               <h3 className="text-2xl font-bold text-white font-mono">&gt; Oyeniyi Isaac</h3>
             </div>
             <p className="text-gray-300 max-w-md mb-6 font-mono text-sm">
-              &gt; Full-stack developer specializing in modern web technologies<br/>
-              &gt; Creating robust and scalable applications<br/>
-              &gt; Web | Mobile | Desktop
+              &gt; Building software systems that scale over time
             </p>
             <div className="flex space-x-3">
               <a href="https://github.com/isaac0yen" target="_blank" rel="noopener noreferrer" className="border-2 border-white p-3 text-white hover:bg-white hover:text-black transition-all duration-300">
@@ -34,7 +32,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 font-mono">
             <div>
               <h4 className="text-lg font-bold mb-4 text-white border-b-2 border-white inline-block">[NAVIGATION]</h4>
@@ -45,12 +43,10 @@ const Footer = () => {
                 <Link href="/about" className="text-gray-300 hover:text-white hover:underline transition duration-300">
                   &gt; About
                 </Link>
-                <Link href="/skills" className="text-gray-300 hover:text-white hover:underline transition duration-300">
-                  &gt; Skills
-                </Link>
+
               </nav>
             </div>
-            
+
             <div>
               <h4 className="text-lg font-bold mb-4 text-white border-b-2 border-white inline-block">[CONTENT]</h4>
               <nav className="flex flex-col space-y-3 mt-4">
@@ -65,7 +61,7 @@ const Footer = () => {
                 </Link>
               </nav>
             </div>
-            
+
             <div className="col-span-2 md:col-span-1 mt-8 md:mt-0">
               <h4 className="text-lg font-bold mb-4 text-white border-b-2 border-white inline-block">[CONTACT]</h4>
               <div className="flex flex-col space-y-3 text-gray-300 mt-4 text-sm">
@@ -81,7 +77,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="mt-16 pt-8 border-t-2 border-white">
           <div className="flex flex-col md:flex-row justify-between items-center font-mono">
             <p className="text-gray-400 mb-4 md:mb-0 text-sm">&copy; {currentYear} Oyeniyi Isaac Inioluwa. All rights reserved.</p>

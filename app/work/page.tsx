@@ -7,9 +7,9 @@ import workExperiences from '../../lib/workPlace';
 
 export default function WorkPage() {
   return (
-    <div className="p-4 bg-white min-h-screen">
+    <div className="pt-24 px-4 pb-4 bg-white min-h-screen">
       <div className="max-w-4xl mx-auto text-center mb-8">
-        <h1 className="text-3xl font-bold mb-2 text-black">Places I've Worked</h1>
+        <h1 className="text-3xl font-bold mb-2 text-black">Systems & Products I’ve Contributed To</h1>
         <p className="text-gray-600">
           A collection of places where I've contributed my skills and gained valuable experience.
         </p>
