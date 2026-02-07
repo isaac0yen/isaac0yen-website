@@ -94,7 +94,7 @@ export default function About() {
                 Leadership & Systems
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6 text-sm sm:text-base">
-                At Fuse Varsity and My Genius, I’ve taken ownership of technical roadmaps and architectural standards. I believe leadership means enabling others to ship correctly and efficiently.
+                As CTO at Fuse Varsity and Lead Engineer at My Genius, I’ve taken ownership of technical roadmaps and architectural standards. I believe leadership means enabling others to ship correctly and efficiently.
               </p>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                 I align engineering efforts with product innovation, ensuring that technical choices serve the business mission rather than just following trends.

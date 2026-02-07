@@ -5,20 +5,20 @@ import Footer from '../components/Footer';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Oyeniyi Isaac - Full Stack Software Engineer',
-  description: 'Oyeniyi Isaac - Full Stack Software Engineer specializing in Node.js, React, and database management. Expertise in developing scalable and secure web applications.',
-  keywords: 'Oyeniyi Isaac, Full Stack Developer, Software Engineer, Node.js, React, MySQL, MongoDB, PostgreSQL, REST APIs, GraphQL, TypeScript, Web Development, PWA',
+  title: 'Oyeniyi Isaac - Software Engineer',
+  description: 'Oyeniyi Isaac - Software Engineer specializing in scalable systems, Node.js, and architectural design. Currently building technology at Fuse Varsity.',
+  keywords: 'Oyeniyi Isaac, Software Engineer, CTO, Fuse Varsity, Technical Leadership, System Architecture, Node.js, React, MySQL, MongoDB, PostgreSQL, REST APIs, GraphQL, TypeScript, Web Development',
   authors: [{ name: 'Oyeniyi Isaac' }],
   openGraph: {
-    title: 'Oyeniyi Isaac - Full Stack Software Engineer',
-    description: 'Oyeniyi Isaac - Full Stack Software Engineer specializing in Node.js, React, and database management. Expertise in developing scalable and secure web applications.',
+    title: 'Oyeniyi Isaac - Software Engineer',
+    description: 'Oyeniyi Isaac - Software Engineer specializing in scalable systems, Node.js, and architectural design. Currently building technology at Fuse Varsity.',
     images: 'https://isaac0yen.com/assets/me.jpeg',
     url: 'https://isaac0yen.com'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Oyeniyi Isaac - Full Stack Software Engineer',
-    description: 'Oyeniyi Isaac - Full Stack Software Engineer specializing in Node.js, React, and database management. Expertise in developing scalable and secure web applications.',
+    title: 'Oyeniyi Isaac - Software Engineer',
+    description: 'Oyeniyi Isaac - Software Engineer specializing in scalable systems, Node.js, and architectural design. Currently building technology at Fuse Varsity.',
     images: 'https://isaac0yen.com/assets/me.jpeg'
   },
   icons: {

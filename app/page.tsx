@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import workExperiences from '../lib/workPlace';
-import { getAllBlogPosts } from '../lib/blogData';
+import { getPrioritizedBlogPosts } from '../lib/blogData';
 import BlogCard from '../components/BlogCard';
 
 export default function Home() {
@@ -59,7 +59,7 @@ export default function Home() {
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h2 className="text-3xl font-bold mb-6 text-black">About Me</h2>
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                I work across product engineering, backend systems, and infrastructure.
+                I work across product engineering, backend systems, and infrastructure. Currently serving as CTO at Fuse Varsity.
               </p>
               <Link
                 href="/about"
@@ -153,7 +153,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {getAllBlogPosts().reverse().slice(0, 3).map((post) => (
+            {getPrioritizedBlogPosts().slice(0, 3).map((post) => (
               <BlogCard
                 key={post.id}
                 slug={post.slug}

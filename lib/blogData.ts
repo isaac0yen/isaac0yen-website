@@ -122,3 +122,12 @@ export function getRelatedPosts(currentSlug: string, limit: number = 3) {
     .filter(post => post.slug !== currentSlug)
     .slice(0, limit);
 }
+
+// Function to get prioritized blog posts (Technology first, then others)
+export function getPrioritizedBlogPosts() {
+  const allPosts = getAllBlogPosts();
+  const techPosts = allPosts.filter(post => post.category === 'Technology');
+  const otherPosts = allPosts.filter(post => post.category !== 'Technology');
+
+  return [...techPosts, ...otherPosts];
+}
