@@ -4,8 +4,8 @@ const workExperiences = [
     role: 'Software Engineer (Founder)',
     imageSrc: '/assets/My Genius.png',
     period: 'Jan 2024 - Till date',
-    link: 'https://mygenius.ng',
-    description: 'Building the initial MVP and scaling the platform',
+    // link: 'https://mygenius.ng',
+    description: 'Building the initial MVP and scaling the platform before final closure',
   },
   {
     companyName: 'Fuse Varsity',
@@ -20,7 +20,7 @@ const workExperiences = [
     role: 'Software Engineer',
     imageSrc: '/assets/bitscard.png',
     period: 'Oct 2024 - Jan 2026',
-    link: 'https://bitscard.com',
+    link: 'https://bitscard.app',
     description: 'Developing secure payment processing features',
   },
   {

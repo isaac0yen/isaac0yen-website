@@ -119,15 +119,22 @@ export default function Home() {
                     <p className="text-gray-600 mb-4">
                       {experience.role} • {experience.period}
                     </p>
-                    <Link
-                      href={experience.link}
-                      className="text-black hover:text-gray-600 font-semibold inline-flex items-center group border-b-2 border-black hover:border-gray-600 transition"
-                    >
-                      Visit Website
-                      <svg className="w-4 h-4 ml-1 transition transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                      </svg>
-                    </Link>
+                    {experience.description && (
+                      <p className="text-sm text-gray-700 italic mb-3 border-l-2 border-gray-300 pl-2">
+                        {experience.description}
+                      </p>
+                    )}
+                    {experience.link && (
+                      <Link
+                        href={experience.link}
+                        className="text-black hover:text-gray-600 font-semibold inline-flex items-center group border-b-2 border-black hover:border-gray-600 transition"
+                      >
+                        Visit Website
+                        <svg className="w-4 h-4 ml-1 transition transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                      </Link>
+                    )}
                   </div>
                 </div>
               ))}
