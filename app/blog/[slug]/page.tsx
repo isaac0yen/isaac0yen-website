@@ -89,7 +89,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               ))}
             </div>
 
-            {post.slug !== 'building-a-product' && post.slug !== 'imgstat-giving-ai-context' && post.coverImage && (
+            {post.slug !== 'building-a-product' && post.slug !== 'imgstat-giving-ai-context' && post.slug !== 'imgstat-v2' && post.coverImage && (
               <div className="relative h-48 md:h-80 lg:h-96 w-full overflow-hidden mb-6 md:mb-8 border-2 md:border-4 border-black bg-gray-100">
                 <Image
                   src={post.coverImage}

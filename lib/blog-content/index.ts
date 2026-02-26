@@ -6,3 +6,4 @@ export { getEverythingWasPerfectContent } from './everything-was-perfect';
 export { getTheRiseOfStudyhubContent } from './the-rise-of-studyhub';
 export { getBuildingAProductContent } from './building-a-product';
 export { getImgstatContextContent } from './imgstat-context';
+export { getImgstatV2Content } from './imgstat-v2';

@@ -6,7 +6,8 @@ import {
   getEverythingWasPerfectContent,
   getTheRiseOfStudyhubContent,
   getBuildingAProductContent,
-  getImgstatContextContent
+  getImgstatContextContent,
+  getImgstatV2Content
 } from './blog-content';
 
 export interface BlogPost {
@@ -23,6 +24,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: '8',
+    category: 'Technology',
+    slug: 'imgstat-v2',
+    title: 'imgstat v2 — giving AI the image context it actually needs',
+    excerpt: 'imgstat started as a tiny renamer. But once I began using it — and really thinking about what AI coding tools *need* — it quickly outgrew that label.',
+    content: getImgstatV2Content(),
+    coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1770490644/WhatsApp_Image_2026-02-07_at_19.28.05_1_ifdhzv.jpg',
+    date: 'Feb 26, 2026',
+    readTime: '3 min read',
+    tags: ['imgstat', 'tool', 'ai', 'developer']
+  },
   {
     id: '7',
     category: 'Technology',
