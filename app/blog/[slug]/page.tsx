@@ -107,10 +107,10 @@ export default async function BlogPostPage({ params }: { params: Params }) {
           ></div>
         </div>
         <footer className="mt-8 md:mt-16 pt-6 md:pt-8 border-t-2 md:border-t-4 border-black max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-3 w-full md:w-auto">
-              <span className="text-black font-bold font-mono text-sm md:text-base mb-2 sm:mb-0">&gt; SHARE:</span>
-              <div className="flex gap-3">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+            <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+              <span className="text-black font-bold font-mono text-sm md:text-base">&gt; SHARE:</span>
+              <div className="flex flex-wrap gap-2 md:gap-3">
                 <a
                   href={`https://x.com/intent/tweet?url=https://isaac0yen.com/blog/${post.slug}&text=${encodeURIComponent(post.title)}`}
                   target="_blank"
@@ -168,7 +168,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
             <Link
               href="/blog"
-              className="px-3 py-2 md:px-4 bg-black text-white border-2 border-black font-bold hover:bg-white hover:text-black transition font-mono whitespace-nowrap text-sm md:text-base self-start md:self-center">
+              className="px-3 py-2 md:px-4 bg-black text-white border-2 border-black font-bold hover:bg-white hover:text-black transition font-mono whitespace-nowrap text-sm md:text-base w-full sm:w-auto text-center">
               &lt;&lt; BACK_TO_BLOG
             </Link>
           </div>

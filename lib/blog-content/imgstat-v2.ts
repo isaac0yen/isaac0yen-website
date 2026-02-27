@@ -6,6 +6,8 @@ export function getImgstatV2Content(): string {
           <h2 class="text-xl md:text-2xl font-bold text-black">&gt; THE_CONTEXT_PROBLEM</h2>
         </div>
         <div class="text-gray-800 leading-relaxed space-y-3 md:space-y-4">
+            <p class="text-xs md:text-sm text-gray-500 italic mb-4">&gt; Note: This is a sequel to <a href="/blog/imgstat-giving-ai-context/" class="underline hover:text-gray-800">the first post</a>. If you haven't read it, check it out!</p>
+            
             <p>&gt; imgstat started as a tiny renamer.</p>
             
             <p>&gt; But once I began using it — and really thinking about what AI coding tools *need* — it quickly outgrew that label.</p>
