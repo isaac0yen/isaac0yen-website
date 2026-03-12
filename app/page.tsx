@@ -15,7 +15,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h1 className="text-3xl md:text-6xl font-bold mb-4">
-                Hi, I'm Isaac
+                Hi, I'm Isaac Oyeniyi
               </h1>
               <h2 className="text-xl md:text-4xl font-light mb-6 text-gray-600">
                 I build software systems.
