@@ -407,7 +407,7 @@ export const blogPosts: BlogPost[] = [
             <div class="border-2 border-white p-6">
               <h3 class="text-xl font-bold mb-4 border-b-2 border-white pb-2">[ CONTACT ]</h3>
               <p class="text-gray-300 mb-4">&gt; For technical discussions or collaboration opportunities:</p>
-              <a href="mailto:isaacoyeniyi06@gmail.com" class="text-white hover:underline font-bold">isaacoyeniyi06@gmail.com</a>
+              <a href="mailto:isaac@fusevarsity.com" class="text-white hover:underline font-bold">isaac@fusevarsity.com</a>
             </div>
             
             <div class="border-2 border-white p-6">

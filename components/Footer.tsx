@@ -65,8 +65,8 @@ const Footer = () => {
             <div className="col-span-2 md:col-span-1 mt-8 md:mt-0">
               <h4 className="text-lg font-bold mb-4 text-white border-b-2 border-white inline-block">[CONTACT]</h4>
               <div className="flex flex-col space-y-3 text-gray-300 mt-4 text-sm">
-                <a href="mailto:isaacoyeniyi06@gmail.com" className="hover:text-white hover:underline transition duration-300">
-                  &gt; isaacoyeniyi06@gmail.com
+                <a href="mailto:isaac@fusevarsity.com" className="hover:text-white hover:underline transition duration-300">
+                  &gt; isaac@fusevarsity.com
                 </a>
                 <a href="tel:+2349110618359" className="hover:text-white hover:underline transition duration-300">
                   &gt; +234 911 061 8359

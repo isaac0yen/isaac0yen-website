@@ -221,7 +221,7 @@ export function getEverythingWasPerfectContent(): string {
             <div class="border-2 border-white p-4 md:p-6">
               <h3 class="text-lg md:text-xl font-bold mb-3 md:mb-4 border-b-2 border-white pb-2">[ CONTACT ]</h3>
               <p class="text-gray-300 mb-3 md:mb-4 text-sm md:text-base">&gt; For technical discussions or collaboration opportunities:</p>
-              <a href="mailto:isaacoyeniyi06@gmail.com" class="text-white hover:underline font-bold text-sm md:text-base">isaacoyeniyi06@gmail.com</a>
+              <a href="mailto:isaac@fusevarsity.com" class="text-white hover:underline font-bold text-sm md:text-base">isaac@fusevarsity.com</a>
             </div>
             
             <div class="border-2 border-white p-4 md:p-6">
