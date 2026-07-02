@@ -10,16 +10,19 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white text-black py-32 border-b border-gray-200">
+      <section className="bg-white text-black min-h-screen flex items-center border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h1 className="text-3xl md:text-6xl font-bold mb-4">
                 Hi, I'm Isaac Oyeniyi
               </h1>
-              <h2 className="text-xl md:text-4xl font-light mb-6 text-gray-600">
-                I build software systems.
-              </h2>
+              <p className="text-gray-600 mb-6 text-base md:text-lg leading-relaxed">
+                I work across product engineering, backend systems, and infrastructure. Currently serving as CTO at Fuse Varsity.
+              </p>
+              <p className="text-gray-500 mb-8 text-sm md:text-base leading-relaxed">
+                Focused on architecture, delivery, and long-term maintainability.
+              </p>
               <div className="flex space-x-4">
                 <Link
                   href="/contact"
@@ -42,40 +45,6 @@ export default function Home() {
                   alt="Oyeniyi Isaac"
                   fill
                   className="object-cover object-bottom scale-130 origin-bottom"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Preview Section */}
-      <section className="py-20 bg-white border-b border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-10 md:mb-0">
-              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                I work across product engineering, backend systems, and infrastructure. Currently serving as CTO at Fuse Varsity.
-              </p>
-              <Link
-                href="/about"
-                className="text-black hover:text-gray-600 font-semibold inline-flex items-center group border-b-2 border-black hover:border-gray-600 transition"
-              >
-                Learn More About Me
-                <svg className="w-4 h-4 ml-1 transition transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </Link>
-            </div>
-            <div className="hidden md:flex w-full md:w-1/2 justify-center px-4 md:px-0">
-              <div className="relative w-full h-64 md:h-80 max-w-md overflow-hidden border-2 border-black">
-                <Image
-                  src="/assets/__.jpeg"
-                  alt="Oyeniyi Isaac"
-                  fill
-                  className="object-cover object-bottom"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
                 />
               </div>
             </div>

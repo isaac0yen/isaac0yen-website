@@ -39,7 +39,7 @@ export function getProblemsOrChallengesContent(): string {
             </div>
             
             <div class="bg-gray-100 border-2 border-black p-4 md:p-6 mt-4 md:mt-6">
-                <h3 class="text-lg md:text-xl font-bold text-black mb-3 md:mb-4">[ THE_JOURNEY_CONTINUES ]</h3>
+                <h3 class="text-lg md:text-xl font-bold text-black mb-3 md:mb-4">[ CONTINUING... ]</h3>
                 <div class="space-y-2 text-black text-sm md:text-base">
                     <p>&gt; [x] Finish school...</p>
                     <p>&gt; [x] Learn that skill...</p>

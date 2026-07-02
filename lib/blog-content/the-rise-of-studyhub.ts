@@ -11,7 +11,7 @@ export function getTheRiseOfStudyhubContent(): string {
                  class="w-16 h-16 md:w-24 md:h-24 mx-auto border-2 md:border-4 border-white" />
           </div>
           <div class="border-2 md:border-4 border-white inline-block px-4 py-2 md:px-6 md:py-4 mb-4 md:mb-6">
-            <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">&gt; THE_RISE_OF_STUDYHUB</h1>
+            <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">&gt; STUDYHUB</h1>
           </div>
           <p class="text-lg md:text-xl lg:text-2xl font-bold mb-6 md:mb-8">[ From Political Campaign Tool to University-Wide Academic Platform ]</p>
           <div class="flex justify-center items-center space-x-3 md:space-x-6 text-xs md:text-sm">
@@ -70,7 +70,7 @@ export function getTheRiseOfStudyhubContent(): string {
 
         <!-- Key Features & Innovation -->
         <section class="mb-8 md:mb-16">
-          <h2 class="text-xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center border-2 md:border-4 border-black inline-block px-4 py-2 md:px-6 md:py-3 bg-white">[ INNOVATION_HIGHLIGHTS ]</h2>
+          <h2 class="text-xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center border-2 md:border-4 border-black inline-block px-4 py-2 md:px-6 md:py-3 bg-white">[ HIGHLIGHTS ]</h2>
           <div class="bg-white border-2 md:border-4 border-black p-4 md:p-8 mt-6 md:mt-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div>
@@ -125,7 +125,7 @@ export function getTheRiseOfStudyhubContent(): string {
 
         <!-- Technical Architecture -->
         <section class="mb-8 md:mb-16">
-          <h2 class="text-xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center border-2 md:border-4 border-black inline-block px-4 py-2 md:px-6 md:py-3 bg-white">[ TECHNICAL_FOUNDATION ]</h2>
+          <h2 class="text-xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center border-2 md:border-4 border-black inline-block px-4 py-2 md:px-6 md:py-3 bg-white">[ TECH_FOUNDATION ]</h2>
           <div class="bg-white border-2 md:border-4 border-black p-4 md:p-8 mt-6 md:mt-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center">
               <div class="bg-gray-100 border-2 border-black p-4 md:p-6">
