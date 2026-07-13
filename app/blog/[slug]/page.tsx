@@ -63,34 +63,32 @@ export default async function BlogPostPage({ params }: { params: Params }) {
   const relatedPosts = await getRelatedPosts(slug);
   return (
     <div className="min-h-screen bg-white">
-      <article className="py-8 md:py-16 lg:py-24 border-b-2 md:border-b-4 border-black">
+      <article className="py-8 md:py-16 lg:py-24 border-b border-gray-200">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <header className="mb-8 md:mb-12">
-            <div className="flex justify-center items-center text-xs md:text-sm text-black mb-4 md:mb-6 font-mono">
-              <span>&gt; {post.date}</span>
-              <span className="mx-2 md:mx-3">|</span>
+          <header className="mb-8 md:mb-12 max-w-3xl mx-auto">
+            <div className="flex items-center text-xs md:text-sm text-gray-500 mb-4 md:mb-6">
+              <span>{post.date}</span>
+              <span className="mx-2 md:mx-3">·</span>
               <span>{post.readTime}</span>
             </div>
 
-            <div className="max-w-4xl mx-auto border-2 md:border-4 border-black bg-white p-4 md:p-6 lg:p-8 mb-6 md:mb-8">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black font-mono leading-tight">
-                # {post.title}
-              </h1>
-            </div>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight mb-5 md:mb-6">
+              {post.title}
+            </h1>
 
-            <div className="flex justify-center flex-wrap gap-2 md:gap-3 mb-6 md:mb-8">
+            <div className="flex flex-wrap gap-2 md:gap-3 mb-6 md:mb-8">
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-2 py-1 md:px-4 md:py-2 bg-white text-black border-2 border-black text-xs md:text-sm font-bold font-mono hover:bg-black hover:text-white transition"
+                  className="text-xs md:text-sm text-gray-500"
                 >
-                  [{tag}]
+                  #{tag}
                 </span>
               ))}
             </div>
 
             {post.slug !== 'building-a-product' && post.slug !== 'imgstat-giving-ai-context' && post.slug !== 'imgstat-v2' && post.coverImage && (
-              <div className="relative h-48 md:h-80 lg:h-96 w-full overflow-hidden mb-6 md:mb-8 border-2 md:border-4 border-black bg-gray-100">
+              <div className="relative h-48 md:h-80 lg:h-96 w-full overflow-hidden mb-6 md:mb-8 rounded-lg bg-gray-100">
                 <Image
                   src={post.coverImage}
                   alt={post.title}
@@ -102,20 +100,20 @@ export default async function BlogPostPage({ params }: { params: Params }) {
           </header>
 
           <div
-            className="max-w-4xl mx-auto text-gray-800 font-mono bg-white p-4 md:p-6 lg:p-8 overflow-hidden break-words"
+            className="max-w-3xl mx-auto overflow-hidden break-words"
             dangerouslySetInnerHTML={{ __html: post.content }}
           ></div>
         </div>
-        <footer className="mt-8 md:mt-16 pt-6 md:pt-8 border-t-2 md:border-t-4 border-black max-w-4xl mx-auto">
+        <footer className="mt-8 md:mt-16 pt-6 md:pt-8 border-t border-gray-200 max-w-3xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
             <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
-              <span className="text-black font-bold font-mono text-sm md:text-base">&gt; SHARE:</span>
+              <span className="text-black font-bold text-sm md:text-base">Share:</span>
               <div className="flex flex-wrap gap-2 md:gap-3">
                 <a
                   href={`https://x.com/intent/tweet?url=https://isaac0yen.com/blog/${post.slug}&text=${encodeURIComponent(post.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 border-2 border-black bg-white hover:bg-black hover:text-white transition"
+                  className="p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-black transition"
                   aria-label="Share on X (Twitter)"
                 >
                   <svg
@@ -131,7 +129,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                   href={`https://www.facebook.com/sharer/sharer.php?u=https://isaac0yen.com/blog/${post.slug}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 border-2 border-black bg-white hover:bg-black hover:text-white transition"
+                  className="p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-black transition"
                   aria-label="Share on Facebook"
                 >
                   <svg
@@ -151,7 +149,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                   href={`https://www.linkedin.com/sharing/share-offsite/?url=https://isaac0yen.com/blog/${post.slug}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 border-2 border-black bg-white hover:bg-black hover:text-white transition"
+                  className="p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-black transition"
                   aria-label="Share on LinkedIn"
                 >
                   <svg
@@ -168,19 +166,19 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
             <Link
               href="/blog"
-              className="px-3 py-2 md:px-4 bg-black text-white border-2 border-black font-bold hover:bg-white hover:text-black transition font-mono whitespace-nowrap text-sm md:text-base w-full sm:w-auto text-center">
-              &lt;&lt; BACK_TO_BLOG
+              className="px-4 py-2 rounded-md bg-black text-white font-medium hover:bg-gray-800 transition whitespace-nowrap text-sm md:text-base w-full sm:w-auto text-center">
+              ← Back to blog
             </Link>
           </div>
         </footer>
       </article>
 
       {relatedPosts.length > 0 && (
-        <section className="py-8 md:py-16 lg:py-20 bg-white border-t-2 md:border-t-4 border-black">
+        <section className="py-8 md:py-16 lg:py-20 bg-white border-t border-gray-200">
           <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <div className="inline-block border-2 md:border-4 border-black bg-white px-4 py-2 md:px-6 md:py-3 mb-6 md:mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-black font-mono">
-                &gt; RELATED_POSTS
+            <div className="mb-6 md:mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-black">
+                Related posts
               </h2>
             </div>
 

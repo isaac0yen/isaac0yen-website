@@ -25,4 +25,76 @@
   .blog-content .grid {
     @apply w-full;
   }
+
+  /* Essay-style blog reading experience */
+  .blog-prose {
+    font-family: Georgia, 'Times New Roman', serif;
+    @apply w-full max-w-none text-gray-800;
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+
+  .blog-prose > * + * {
+    @apply mt-6;
+  }
+
+  .blog-prose h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    @apply text-2xl md:text-3xl font-bold text-black mt-12 mb-4 leading-snug;
+  }
+
+  .blog-prose h3 {
+    @apply text-xl md:text-2xl font-bold text-black mt-8 mb-3;
+  }
+
+  .blog-prose p {
+    @apply text-gray-800;
+  }
+
+  .blog-prose a {
+    @apply text-blue-700 underline underline-offset-2 hover:text-blue-900;
+  }
+
+  .blog-prose ul {
+    @apply list-disc pl-6 space-y-2;
+  }
+
+  .blog-prose ol {
+    @apply list-decimal pl-6 space-y-2;
+  }
+
+  .blog-prose blockquote {
+    @apply border-l-4 border-gray-300 pl-4 md:pl-6 italic text-gray-600 my-6;
+  }
+
+  .blog-prose blockquote p + p {
+    @apply mt-2;
+  }
+
+  .blog-prose pre {
+    font-family: 'Courier New', Courier, monospace;
+    @apply bg-gray-100 text-gray-900 p-4 rounded-lg overflow-x-auto text-sm my-6;
+  }
+
+  .blog-prose code {
+    font-family: 'Courier New', Courier, monospace;
+    @apply text-sm;
+  }
+
+  .blog-prose :not(pre) > code {
+    @apply bg-gray-100 text-gray-900 px-1.5 py-0.5 rounded;
+  }
+
+  .blog-prose .blog-figure {
+    @apply my-8;
+  }
+
+  .blog-prose .blog-figure img {
+    @apply max-w-full h-auto rounded-lg;
+  }
+
+  .blog-prose .blog-caption {
+    font-family: Georgia, 'Times New Roman', serif;
+    @apply text-sm text-gray-500 italic;
+  }
 }
