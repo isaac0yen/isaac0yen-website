@@ -1,4 +1,4 @@
-name: Build and Deploy to FTP
+name: Build and Deploy via SFTP
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
       - name: Checkout repository
@@ -26,12 +27,15 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy via SFTP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./out/
-          server-dir: /client/isaac0yen.com/
-          protocol: ftps
+          host: ${{ secrets.SSH_IP_ADDRESS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          source: "out/*"
+          target: "/softwares/client/isaac0yen.com/"
+          strip_components: 1
+          overwrite: true
+          rm: true
