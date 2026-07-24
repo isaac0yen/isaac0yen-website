@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 // app/contact/page.tsx
 'use client';
-import ContactForm from '../../components/ContactForm';
 
 export default function ContactPage() {
   return (
@@ -13,8 +12,21 @@ export default function ContactPage() {
             Open to thoughtful collaborations and serious conversations.
           </p>
         </div>
-        <div className="max-w-3xl mx-auto bg-white border-2 border-black p-8">
-          <ContactForm />
+        <div className="max-w-xl mx-auto flex flex-col gap-4">
+          <a
+            href="mailto:isaac@fusevarsity.com"
+            className="w-full bg-black text-white py-4 px-6 border-2 border-black text-center font-medium transition hover:bg-white hover:text-black"
+          >
+            Email me — isaac@fusevarsity.com
+          </a>
+          <a
+            href="https://wa.me/2349110618359"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full bg-white text-black py-4 px-6 border-2 border-black text-center font-medium transition hover:bg-black hover:text-white"
+          >
+            Message me on WhatsApp
+          </a>
         </div>
       </div>
     </section>
