@@ -7,3 +7,4 @@ export { getTheRiseOfStudyhubContent } from './the-rise-of-studyhub';
 export { getBuildingAProductContent } from './building-a-product';
 export { getImgstatContextContent } from './imgstat-context';
 export { getImgstatV2Content } from './imgstat-v2';
+export { getDepartmentalOperationsDigitalizationContent } from './departmental-operations-digitalization';

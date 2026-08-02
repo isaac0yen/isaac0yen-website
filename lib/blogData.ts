@@ -7,7 +7,8 @@ import {
   getTheRiseOfStudyhubContent,
   getBuildingAProductContent,
   getImgstatContextContent,
-  getImgstatV2Content
+  getImgstatV2Content,
+  getDepartmentalOperationsDigitalizationContent
 } from './blog-content';
 
 export interface BlogPost {
@@ -24,6 +25,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: '9',
+    category: 'Technology',
+    slug: 'departmental-operations-digitalization',
+    title: 'Why departmental operations need to be digitalized and what is required to pull it off!',
+    excerpt: 'After leading tech at multiple platforms, I think I can say a thing or two about how operations can be better handled, on a departmental level.',
+    content: getDepartmentalOperationsDigitalizationContent(),
+    coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1785707104/b9f83f7f-de4f-4e3b-a074-9d8b1da703b2_gdmqi2.png',
+    date: 'Aug 2, 2026',
+    readTime: '3 min read',
+    tags: ['Operations', 'Technology', 'Leadership', 'Digitalization']
+  },
   {
     id: '8',
     category: 'Technology',
