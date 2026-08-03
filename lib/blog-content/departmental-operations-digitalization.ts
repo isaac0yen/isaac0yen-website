@@ -1,5 +1,10 @@
 export function getDepartmentalOperationsDigitalizationContent(): string {
   return `<article class="blog-prose">
+    <div style="background: #f9fafb; border-left: 4px solid #000; padding: 16px; margin-bottom: 24px;">
+      <p style="margin: 0; font-weight: 600;">TL;DR (Summary)</p>
+      <p style="margin: 8px 0 0 0;">Isaac believes that departmental operations need digitalization not just for efficiency, but for continuity... because leadership changes every year, and systems should outlive the executives that built them.</p>
+    </div>
+
     <p>After leading tech at <a href="https://fusevarsity.com/" target="_blank" rel="noopener noreferrer">FUSE Varsity</a>, <a href="https://mygenius.ng/" target="_blank" rel="noopener noreferrer">My Genius</a>, <a href="http://quiz.mygenius.ng/" target="_blank" rel="noopener noreferrer">Genius Quiz</a>, <a href="https://learn.fusevarsity.com/" target="_blank" rel="noopener noreferrer">FUSELearn</a> and very recently <a href="https://amcos.mygenius.ng/" target="_blank" rel="noopener noreferrer">AMCOS' election portal</a>…</p>
     
     <p>I think I can say a thing or two about how operations can be better handled, and in this context… on a departmental level. (and we're sticking to the departmental level for a reason… hehehe! 😂)</p>
