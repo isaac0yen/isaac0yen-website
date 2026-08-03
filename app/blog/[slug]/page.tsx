@@ -24,29 +24,40 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     };
   }
 
+  const postUrl = `https://isaac0yen.com/blog/${slug}`;
+
   return {
-    title: post.title,
+    title: `${post.title} | Oyeniyi Isaac`,
     description: post.excerpt,
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      images: [
-        {
-          url: post.coverImage,
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
+      url: postUrl,
+      siteName: 'Oyeniyi Isaac',
+      type: 'article',
+      publishedTime: post.date,
+      authors: ['Oyeniyi Isaac Inioluwa'],
+      images: post.coverImage
+        ? [
+            {
+              url: post.coverImage,
+              secureUrl: post.coverImage,
+              width: 1200,
+              height: 630,
+              alt: post.title,
+            },
+          ]
+        : [],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
-      images: [post.coverImage],
+      images: post.coverImage ? [post.coverImage] : [],
+      creator: '@isaac0yen',
     },
     keywords: post.tags,
-    authors: [{ name: 'Oyeniyi isaac Inioluwa' }],
+    authors: [{ name: 'Oyeniyi Isaac Inioluwa' }],
     publisher: 'https://isaac0yen.com',
   };
 }

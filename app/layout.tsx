@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://isaac0yen.com'),
   title: 'Oyeniyi Isaac - Software Engineer',
   description: 'Oyeniyi Isaac - Software Engineer specializing in scalable systems, Node.js, and architectural design. Currently building technology at Fuse Varsity.',
   keywords: 'Oyeniyi Isaac, Software Engineer, CTO, Fuse Varsity, Technical Leadership, System Architecture, Node.js, React, MySQL, MongoDB, PostgreSQL, REST APIs, GraphQL, TypeScript, Web Development',
@@ -12,14 +13,25 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Oyeniyi Isaac - Software Engineer',
     description: 'Oyeniyi Isaac - Software Engineer specializing in scalable systems, Node.js, and architectural design. Currently building technology at Fuse Varsity.',
-    images: 'https://isaac0yen.com/assets/me-2.jpeg',
-    url: 'https://isaac0yen.com'
+    url: 'https://isaac0yen.com',
+    siteName: 'Oyeniyi Isaac',
+    type: 'website',
+    images: [
+      {
+        url: 'https://isaac0yen.com/assets/me-2.jpeg',
+        secureUrl: 'https://isaac0yen.com/assets/me-2.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Oyeniyi Isaac - Software Engineer',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Oyeniyi Isaac - Software Engineer',
     description: 'Oyeniyi Isaac - Software Engineer specializing in scalable systems, Node.js, and architectural design. Currently building technology at Fuse Varsity.',
-    images: 'https://isaac0yen.com/assets/me-2.jpeg'
+    images: ['https://isaac0yen.com/assets/me-2.jpeg'],
+    creator: '@isaac0yen',
   },
   icons: {
     icon: [
