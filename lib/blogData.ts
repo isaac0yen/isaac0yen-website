@@ -28,14 +28,14 @@ export const blogPosts: BlogPost[] = [
   {
     id: '9',
     category: 'Technology',
-    slug: 'departmental-operations-digitalization',
-    title: 'Why departmental operations need to be digitalized and what is required to pull it off!',
-    excerpt: 'After leading tech at multiple platforms, I think I can say a thing or two about how operations can be better handled, on a departmental level.',
+    slug: 'why-nothing-works',
+    title: 'Departmental Operations: Why Nothing Works And What We're Going To Do About It',
+    excerpt: 'Every year new excos inherit WhatsApp groups, lost screenshots, and systems that only worked because one person held it together. Then that person graduates and it all falls apart.',
     content: getDepartmentalOperationsDigitalizationContent(),
-    coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1786114810/510008e0-edcf-4631-b224-bc62576c2f5f_rfthqc.png',
+    coverImage: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1786145818/64b22428-cba3-45f5-b349-c332138774f7_fi7o7x.png',
     date: 'Aug 2, 2026',
-    readTime: '3 min read',
-    tags: ['Operations', 'Technology', 'Leadership', 'Digitalization']
+    readTime: '4 min read',
+    tags: ['Operations', 'Infrastructure', 'Leadership', 'Systems']
   },
   {
     id: '8',
