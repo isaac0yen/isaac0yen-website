@@ -15,7 +15,7 @@ export function getDepartmentalOperationsDigitalizationContent(): string {
 
     <p>Let's start with the WhatsApp group, because that's where most of this breaks first.</p>
 
-    <p>You'd think a WhatsApp group is enough. It's free, everybody already has it installed, and you can just drop a flyer and move on. But here's the actual problem: WhatsApp was built for conversation, not for storage. Every announcement you post is competing with birthday messages, someone asking "who has the CIT301 note", and forwarded memes. Important information doesn't sit at the top where people can find it later, it sinks. By the time someone needs that GES form deadline you posted three weeks ago, it's buried under four hundred unread messages and nobody's going to scroll for it.</p>
+    <p>You'd think a WhatsApp group is enough. It's free, everybody already has it installed, and you can just drop a flyer and move on. But here's the actual problem: WhatsApp was built for conversation, not for storage. Every announcement you post is competing with birthday messages, someone asking "who has the IFT 212 note", and forwarded memes. Important information doesn't sit at the top where people can find it later, it sinks. By the time someone needs that event form deadline you posted three weeks ago, it's buried under four hundred unread messages and nobody's going to scroll for it.</p>
 
     <p>That's not a WhatsApp problem exactly. It's a "we're using the wrong tool for the job" problem. And it repeats itself everywhere in how departments are run.</p>
 
