@@ -2,7 +2,7 @@ export function getDepartmentalOperationsDigitalizationContent(): string {
   return `<article class="blog-prose">
     <div style="background: #f9fafb; border-left: 4px solid #000; padding: 16px; margin-bottom: 24px;">
       <p style="margin: 0; font-weight: 600;">TL;DR (Summary)</p>
-      <p style="margin: 8px 0 0 0;">Every year, new excos inherit broken systems and rebuild from scratch. WhatsApp groups lose announcements, Google Forms can't track continuity, and knowledge dies when leadership graduates. The real gap isn't effort—it's infrastructure that survives past the people currently in office.</p>
+      <p style="margin: 8px 0 0 0;">Every year, new excos inherit broken systems and rebuild from scratch. WhatsApp groups lose announcements, Google Forms can't track continuity, and knowledge dies when leadership graduates. The real gap isn't effort it's infrastructure that survives past the people currently in office.</p>
     </div>
 
     <p>Every year it's the same thing.</p>
