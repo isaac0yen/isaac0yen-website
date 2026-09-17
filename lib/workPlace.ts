@@ -1,5 +1,12 @@
 const workExperiences = [
   {
+    companyName: 'Qucoon',
+    role: 'Software Engineer',
+    imageSrc: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1789635911/qucoon2_hj5ah9.png',
+    period: 'Aug 2026 - October 2026',
+    description: 'Backend engineering team. SIWES placement.',
+  },
+  {
     companyName: 'My Genius',
     role: 'Software Engineer (Founder)',
     imageSrc: '/assets/My Genius.png',
