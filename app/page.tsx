@@ -68,10 +68,7 @@ export default function Home() {
               .filter((experience): experience is NonNullable<typeof experience> => Boolean(experience))
               .map((experience, index) => (
                 <div key={index} className="bg-white overflow-hidden border-2 border-black hover:bg-gray-50 transition duration-300">
-                  <div
-                    className="relative h-48 w-full border-b-2 border-black"
-                    style={experience.imageBg ? { backgroundColor: experience.imageBg } : undefined}
-                  >
+                  <div className="relative h-48 w-full border-b-2 border-black">
                     <Image
                       src={experience.imageSrc}
                       alt={experience.companyName}

@@ -5,19 +5,16 @@ export interface WorkExperience {
   period: string;
   link?: string;
   description?: string;
-  /** Optional backdrop for logos that don't read well on pure white */
-  imageBg?: string;
 }
 
 const workExperiences: WorkExperience[] = [
   {
     companyName: 'Qucoon',
     role: 'Software Engineer',
-    imageSrc: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1789635911/qucoon2_hj5ah9.png',
+    imageSrc: '/assets/qucoon-logo.png',
     period: 'Aug 2026 - October 2026',
+    link: 'https://www.qucoon.com',
     description: 'Backend engineering team. SIWES placement.',
-    // Logo has white text, needs a non-white backdrop to stay legible
-    imageBg: '#eae7e0',
   },
   {
     companyName: 'My Genius',
@@ -40,7 +37,6 @@ const workExperiences: WorkExperience[] = [
     role: 'Software Engineer',
     imageSrc: '/assets/bitscard.png',
     period: 'Oct 2024 - Jan 2026',
-    link: 'https://bitscard.app',
     description: 'Developing secure payment processing features',
   },
   {
