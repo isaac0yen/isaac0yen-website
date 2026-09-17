@@ -11,9 +11,10 @@ interface WorkCardProps {
   period: string;
   link?: string;
   description?: string;
+  imageBg?: string;
 }
 
-const WorkCard = ({ companyName, role, imageSrc, period, link, description }: WorkCardProps) => {
+const WorkCard = ({ companyName, role, imageSrc, period, link, description, imageBg }: WorkCardProps) => {
   return (
     <motion.div
       className="group relative overflow-hidden border-2 border-black hover:bg-gray-50 transition duration-300 p-4"
@@ -22,7 +23,10 @@ const WorkCard = ({ companyName, role, imageSrc, period, link, description }: Wo
       whileHover={{ scale: 1.02 }}
     >
       {/* Company Image */}
-      <div className="relative h-40 w-full mb-4 overflow-hidden border-b-2 border-black">
+      <div
+        className="relative h-40 w-full mb-4 overflow-hidden border-b-2 border-black"
+        style={imageBg ? { backgroundColor: imageBg } : undefined}
+      >
         <Image
           src={imageSrc}
           alt={companyName}

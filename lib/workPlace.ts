@@ -1,18 +1,31 @@
-const workExperiences = [
+export interface WorkExperience {
+  companyName: string;
+  role: string;
+  imageSrc: string;
+  period: string;
+  link?: string;
+  description?: string;
+  /** Optional backdrop for logos that don't read well on pure white */
+  imageBg?: string;
+}
+
+const workExperiences: WorkExperience[] = [
   {
     companyName: 'Qucoon',
     role: 'Software Engineer',
     imageSrc: 'https://res.cloudinary.com/duuu5uos5/image/upload/v1789635911/qucoon2_hj5ah9.png',
     period: 'Aug 2026 - October 2026',
     description: 'Backend engineering team. SIWES placement.',
+    // Logo has white text, needs a non-white backdrop to stay legible
+    imageBg: '#eae7e0',
   },
   {
     companyName: 'My Genius',
     role: 'Software Engineer (Founder)',
     imageSrc: '/assets/My Genius.png',
     period: 'Jan 2024 - Till date',
-    // link: 'https://mygenius.ng',
-    description: 'Building the initial MVP and scaling the platform before final closure',
+    link: 'https://mygenius.ng',
+    description: 'Ed.Tech Community focused on making school bearable.',
   },
   {
     companyName: 'Fuse Varsity',

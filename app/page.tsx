@@ -63,15 +63,15 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {workExperiences
-              .filter(exp => {
-                const selectedCompanies = ["My Genius", "Fuse Varsity", "Bitscard"]
-                return selectedCompanies.includes(exp.companyName)
-              })
-              .slice(0, 3)
+            {["My Genius", "Fuse Varsity", "Qucoon"]
+              .map(name => workExperiences.find(exp => exp.companyName === name))
+              .filter((experience): experience is NonNullable<typeof experience> => Boolean(experience))
               .map((experience, index) => (
                 <div key={index} className="bg-white overflow-hidden border-2 border-black hover:bg-gray-50 transition duration-300">
-                  <div className="relative h-48 w-full border-b-2 border-black">
+                  <div
+                    className="relative h-48 w-full border-b-2 border-black"
+                    style={experience.imageBg ? { backgroundColor: experience.imageBg } : undefined}
+                  >
                     <Image
                       src={experience.imageSrc}
                       alt={experience.companyName}
