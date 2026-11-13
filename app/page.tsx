@@ -7,6 +7,7 @@ import speakingItems from '../lib/speaking';
 import { getPrioritizedBlogPosts } from '../lib/blogData';
 import BlogCard from '../components/BlogCard';
 import SpeakingGallery from '../components/SpeakingGallery';
+import BrandsCloud from '../components/BrandsCloud';
 
 export default function Home() {
   return (
@@ -106,6 +107,12 @@ export default function Home() {
             >
               View All Work Experience
             </Link>
+          </div>
+
+          {/* Brands worked with */}
+          <div className="mt-14 md:mt-16 pt-10 md:pt-12 border-t border-gray-200">
+            <h3 className="text-center text-2xl font-bold mb-6 md:mb-8 text-black">Brands worked with</h3>
+            <BrandsCloud />
           </div>
         </div>
       </section>
