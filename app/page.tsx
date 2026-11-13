@@ -6,7 +6,7 @@ import workExperiences from '../lib/workPlace';
 import speakingItems from '../lib/speaking';
 import { getPrioritizedBlogPosts } from '../lib/blogData';
 import BlogCard from '../components/BlogCard';
-import SpeakingCard from '../components/SpeakingCard';
+import SpeakingGallery from '../components/SpeakingGallery';
 
 export default function Home() {
   return (
@@ -111,22 +111,18 @@ export default function Home() {
       </section>
 
       {/* Speaking & Events (top 3 from lib/speaking.ts; the rest live on /speaking) */}
-      <section className="py-20 bg-white border-b border-gray-200">
+      <section className="py-12 md:py-20 bg-white border-b border-gray-200">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <h2 className="text-3xl font-bold mb-4 text-black">Speaking & Events</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Workshops, masterclasses and talks I've led and taken part in.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {speakingItems.slice(0, 3).map((item) => (
-              <SpeakingCard key={item.id} item={item} variant="frame" />
-            ))}
-          </div>
+          <SpeakingGallery items={speakingItems.slice(0, 3)} layout="teaser" />
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-8 md:mt-10">
             <Link
               href="/speaking"
               className="px-6 py-3 bg-black text-white border border-black font-semibold hover:bg-white hover:text-black transition duration-300"
